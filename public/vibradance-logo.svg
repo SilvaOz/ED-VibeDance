@@ -1,0 +1,30 @@
+<svg width="100%" viewBox="0 0 680 370" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>VibraDance Logo</title>
+<desc>Logo de VibraDance con símbolo de ondas de sonido concéntricas y tipografía</desc>
+
+<!-- ─── SÍMBOLO: ondas de sonido concéntricas ─── -->
+<ellipse cx="340" cy="158" rx="88" ry="72" fill="none" stroke="#6B4FA0" stroke-width="1.2" opacity="0.18"/>
+<ellipse cx="340" cy="158" rx="74" ry="59" fill="none" stroke="#6B4FA0" stroke-width="1.5" opacity="0.28"/>
+<ellipse cx="340" cy="158" rx="60" ry="47" fill="none" stroke="#6B4FA0" stroke-width="2" opacity="0.42"/>
+<ellipse cx="340" cy="158" rx="45" ry="35" fill="none" stroke="#6B4FA0" stroke-width="2.5" opacity="0.60"/>
+<ellipse cx="340" cy="158" rx="30" ry="22" fill="none" stroke="#6B4FA0" stroke-width="3" opacity="0.80"/>
+
+<!-- Punto central -->
+<circle cx="340" cy="158" r="5" fill="#6B4FA0" opacity="0.95"/>
+<circle cx="340" cy="158" r="2.5" fill="#D4A94A"/>
+
+<!-- Ondas horizontales izquierda -->
+<path d="M 252 148 Q 262 140 272 148 Q 282 156 292 148" fill="none" stroke="#6B4FA0" stroke-width="1.8" opacity="0.5" stroke-linecap="round"/>
+<path d="M 240 158 Q 252 148 264 158 Q 276 168 288 158" fill="none" stroke="#6B4FA0" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+
+<!-- Ondas horizontales derecha -->
+<path d="M 388 148 Q 398 140 408 148 Q 418 156 428 148" fill="none" stroke="#6B4FA0" stroke-width="1.8" opacity="0.5" stroke-linecap="round"/>
+<path d="M 392 158 Q 404 148 416 158 Q 428 168 440 158" fill="none" stroke="#6B4FA0" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+
+<!-- Línea separadora -->
+<line x1="180" y1="245" x2="500" y2="245" stroke="#6B4FA0" stroke-width="0.6" opacity="0.35"/>
+
+<!-- ─── TIPOGRAFÍA ─── -->
+<text x="340" y="308" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="64" font-weight="300" fill="#F8F5EE">VIBRA<tspan font-weight="600" font-style="italic" fill="#6B4FA0">DANCE</tspan></text>
+<text x="340" y="342" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="15" font-weight="300" fill="#8B6FBE">CONSCIOUS DANCE · LEIPZIG</text>
+</svg>

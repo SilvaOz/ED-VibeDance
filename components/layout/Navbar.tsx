@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navLinks, siteConfig } from "@/lib/config";
+import { navLinks } from "@/lib/config";
 import { Button } from "@/components/ui/Button";
+import { Logo } from "@/components/ui/Logo";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,13 +34,8 @@ export function Navbar() {
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-none group">
-          <span className="font-display text-xl font-semibold text-cream group-hover:text-accent-light transition-colors">
-            {siteConfig.name}
-          </span>
-          <span className="font-sans text-[10px] text-muted tracking-widest uppercase">
-            Leipzig
-          </span>
+        <Link href="/" className="opacity-90 hover:opacity-100 transition-opacity">
+          <Logo variant="compact" />
         </Link>
 
         {/* Desktop nav */}

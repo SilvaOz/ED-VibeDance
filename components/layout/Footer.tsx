@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig, navLinks } from "@/lib/config";
+import { Logo } from "@/components/ui/Logo";
 
 const legalLinks = [
   { label: "Impressum", href: "/impressum" },
@@ -14,13 +15,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
           {/* Col 1 — Brand */}
           <div>
-            <Link href="/" className="inline-block mb-4">
-              <span className="font-display text-2xl font-semibold text-cream">
-                {siteConfig.name}
-              </span>
-              <p className="font-sans text-[10px] text-muted tracking-widest uppercase">
-                Ecstatic Dance Leipzig
-              </p>
+            <Link href="/" className="inline-block mb-5 opacity-90 hover:opacity-100 transition-opacity">
+              <Logo variant="full" />
             </Link>
             <p className="font-sans text-sm text-muted leading-relaxed mb-5 max-w-xs">
               {siteConfig.tagline}
