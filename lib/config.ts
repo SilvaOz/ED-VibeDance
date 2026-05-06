@@ -83,8 +83,8 @@ export const eventSchedule = [
 export const events: Event[] = [
   {
     id: "evt-001",
-    slug: "ecstatic-dance-leipzig-13-mai-2026",
-    date: "2026-05-13T19:30:00",
+    slug: "ecstatic-dance-leipzig-12-mai-2026",
+    date: "2026-05-12T19:30:00",
     title: "Ecstatic Dance Leipzig",
     subtitle: "Didgeridoo Live + La Lvcha",
     dj: "La Lvcha",
@@ -113,8 +113,8 @@ export const events: Event[] = [
   },
   {
     id: "evt-002",
-    slug: "ecstatic-dance-leipzig-20-mai-2026",
-    date: "2026-05-20T19:30:00",
+    slug: "ecstatic-dance-leipzig-19-mai-2026",
+    date: "2026-05-19T19:30:00",
     title: "Ecstatic Dance Leipzig",
     subtitle: "Vollmond Edition",
     dj: "La Lvcha",
@@ -143,8 +143,8 @@ export const events: Event[] = [
   },
   {
     id: "evt-003",
-    slug: "ecstatic-dance-leipzig-27-mai-2026",
-    date: "2026-05-27T19:30:00",
+    slug: "ecstatic-dance-leipzig-26-mai-2026",
+    date: "2026-05-26T19:30:00",
     title: "Ecstatic Dance Leipzig",
     subtitle: "Wurzeln des Klangs",
     dj: "La Lvcha",
