@@ -8,7 +8,7 @@ import { CommunitySection } from "@/components/home/CommunitySection";
 import { siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.fullName} — Ecstatic Dance, Didgeridoo en Vivo, Leipzig`,
+  title: `${siteConfig.fullName} — Ecstatic Dance, Didgeridoo Live, Leipzig`,
   description: siteConfig.description,
 };
 

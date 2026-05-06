@@ -6,44 +6,44 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Static placeholder — will be replaced by MDX when configured
+// Static placeholder — wird durch MDX ersetzt, sobald konfiguriert
 const posts: Record<
   string,
   { title: string; date: string; content: string; tags: string[] }
 > = {
-  "que-es-ecstatic-dance": {
-    title: "¿Qué es el Ecstatic Dance? Una guía completa",
+  "was-ist-ecstatic-dance": {
+    title: "Was ist Ecstatic Dance? Ein vollständiger Leitfaden",
     date: "2026-04-15",
-    tags: ["ecstatic dance", "conscious dance", "introducción"],
-    content: `El Ecstatic Dance es una práctica de movimiento libre que nació en Hawaii a principios de los 2000 y se ha expandido a más de 50 países. La premisa es simple pero poderosa: música + libertad + presencia = transformación.
+    tags: ["ecstatic dance", "conscious dance", "grundlagen"],
+    content: `Ecstatic Dance ist eine Praxis der freien Bewegung, die Anfang der 2000er Jahre auf Hawaii entstand und sich inzwischen in über 50 Ländern verbreitet hat. Die Prämisse ist einfach, aber kraftvoll: Musik + Freiheit + Präsenz = Transformation.
 
-A diferencia del baile convencional, no hay pasos que aprender, no hay coreografías que seguir, no hay forma correcta o incorrecta de moverse. El único maestro eres tú mismo. El cuerpo sabe lo que necesita — solo hay que darle permiso para expresarse.
+Anders als beim konventionellen Tanzen gibt es keine Schritte zu lernen, keine Choreografien zu befolgen, keine richtige oder falsche Art, sich zu bewegen. Der einzige Lehrer bist du selbst. Der Körper weiß, was er braucht — man muss ihm nur die Erlaubnis geben, sich auszudrücken.
 
-Las tres claves del Ecstatic Dance son: música cuidadosamente seleccionada que guía el viaje emocional, un espacio seguro sin juicios donde todos son bienvenidos, y las cinco reglas básicas (descalzos, sin palabras en la pista, sin alcohol ni drogas, sin teléfono, con respeto).
+Die drei Schlüssel des Ecstatic Dance sind: sorgfältig ausgewählte Musik, die die emotionale Reise führt; ein sicherer, urteilsfreier Raum, in dem alle willkommen sind; und die fünf Grundregeln (barfuß, kein Sprechen auf der Tanzfläche, kein Alkohol oder Drogen, kein Handy, mit Respekt).
 
-En Leipzig, llevamos este formato un paso más allá con el diferencial único del didgeridoo en vivo de Oscar Silva, que abre cada sesión con sonido ancestral.`,
+In Leipzig gehen wir mit dem einzigartigen Merkmal des Live-Didgeridoos von Oscar Silva einen Schritt weiter — er eröffnet jede Session mit ancestralem Klang.`,
   },
-  "didgeridoo-sound-healing": {
-    title: "El didgeridoo como herramienta de sanación",
+  "didgeridoo-heilklang": {
+    title: "Das Didgeridoo als Heilklang-Instrument",
     date: "2026-04-22",
-    tags: ["didgeridoo", "sound healing", "música"],
-    content: `El didgeridoo es uno de los instrumentos más antiguos del mundo — tiene más de 40.000 años de historia en las culturas aborígenes australianas. Pero más allá de su historia, su magia radica en el sonido que produce: frecuencias profundas que resuenan directamente con el sistema nervioso parasimpático.
+    tags: ["didgeridoo", "sound healing", "musik"],
+    content: `Das Didgeridoo ist eines der ältesten Instrumente der Welt — es hat über 40.000 Jahre Geschichte in den Kulturen der australischen Ureinwohner. Doch über seine Geschichte hinaus liegt seine Magie im Klang: tiefe Frequenzen, die direkt mit dem parasympathischen Nervensystem resonieren.
 
-Cuando escuchas un didgeridoo en vivo, el sonido no solo llega a tus oídos — lo sientes en el pecho, en el abdomen, en los huesos. Esta vibración física tiene efectos documentados: reduce el cortisol, activa el nervio vago, facilita estados de relajación profunda y apertura emocional.
+Wenn du ein Didgeridoo live hörst, kommt der Klang nicht nur bei deinen Ohren an — du spürst ihn in der Brust, im Bauch, in den Knochen. Diese physische Vibration hat dokumentierte Wirkungen: Sie senkt Cortisol, aktiviert den Vagusnerv und erleichtert Zustände tiefer Entspannung und emotionaler Öffnung.
 
-En el contexto del Ecstatic Dance, el didgeridoo de Oscar Silva sirve como portal de entrada. Antes de que la música del DJ comience, el sonido del didgeridoo prepara el cuerpo y la mente para el movimiento consciente.`,
+Im Kontext des Ecstatic Dance dient das Didgeridoo von Oscar Silva als Eingangsportal. Bevor die Musik des DJs beginnt, bereitet der Klang des Didgeridoos Körper und Geist auf bewusste Bewegung vor.`,
   },
-  "ecstatic-dance-leipzig-guia": {
-    title: "Guía para tu primera noche de Ecstatic Dance en Leipzig",
+  "zehnerkarte-lohnt-sich": {
+    title: "Lohnt sich die Zehnerkarte?",
     date: "2026-04-29",
-    tags: ["Leipzig", "primer evento", "guía"],
-    content: `Si es tu primera vez, es completamente normal sentir algo de nerviosismo. El Ecstatic Dance es diferente a cualquier otro espacio de baile que hayas visitado. Pero eso es exactamente lo que lo hace especial.
+    tags: ["zehnerkarte", "preise", "praktisches"],
+    content: `Ein ehrlicher Vergleich: An der Abendkasse zahlst du 15 €, im Vorverkauf 12 €, als Early Bird 8 €. Mit der Zehnerkarte kommst du auf 10 € pro Abend — für alle 10 Eintritte.
 
-Qué traer: ropa cómoda con la que puedas moverte libremente, una botella de agua, y calcetines para el camino (bailamos descalzos). No traigas perfumes fuertes ni alcohol.
+Das klingt nach einem kleinen Unterschied, aber über ein Jahr gesehen ergibt sich folgendes Bild: Wer zweimal im Monat kommt, spart gegenüber dem Vorverkauf rund 48 € pro Jahr — und das ganz ohne Stress, jeweils Tickets kaufen zu müssen.
 
-Cómo llegar: Studio Bewegungsraum, Karl-Liebknecht-Str. 42, 04107 Leipzig. Tranvía línea 10 o 11, parada Hohe Straße. Las puertas abren a las 19:30, cierran a las 19:45 en punto.
+Die Zehnerkarte ist außerdem 2 Jahre gültig und an keine festen Termine gebunden. Du kaufst sie einmal und nutzt sie, wann du willst. Ideal für alle, die regelmäßig tanzen wollen, aber nicht jeden Dienstag kommen können.
 
-Qué esperar: cuando entres, habrá un espacio tranquilo para dejar tus cosas y descalzarte. A las 20:00 comenzamos con el ritual de apertura y las primeras notas de didgeridoo. La journey dura hasta las 22:00, seguida de sound healing. Puedes moverte como sientas — intenso, suave, sin moverse. Todo es válido.`,
+Und der vielleicht wichtigste Punkt: Mit der Zehnerkarte kommst du in den richtigen Modus. Du bist nicht mehr Gast — du bist Teil der Community.`,
   },
 };
 
@@ -64,15 +64,18 @@ export default async function BlogPostPage({ params }: PageProps) {
   if (!post) notFound();
 
   return (
-    <div className="pt-24 pb-20 px-4">
+    <div className="pt-28 pb-24 px-4">
       <div className="mx-auto max-w-3xl">
         <Button href="/blog" variant="ghost" size="sm" className="mb-8">
-          ← Volver al blog
+          ← Zurück zum Blog
         </Button>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {post.tags.map((tag) => (
-            <span key={tag} className="font-sans text-xs text-muted/60 uppercase tracking-widest">
+            <span
+              key={tag}
+              className="font-sans text-xs text-muted/60 uppercase tracking-widest"
+            >
               #{tag}
             </span>
           ))}
@@ -82,14 +85,14 @@ export default async function BlogPostPage({ params }: PageProps) {
           {post.title}
         </h1>
         <time className="font-sans text-sm text-muted block mb-12">
-          {new Date(post.date).toLocaleDateString("es-ES", {
+          {new Date(post.date).toLocaleDateString("de-DE", {
             day: "numeric",
             month: "long",
             year: "numeric",
           })}
         </time>
 
-        <div className="prose-content space-y-5">
+        <div className="space-y-5">
           {post.content.split("\n\n").map((paragraph, i) => (
             <p key={i} className="font-sans text-sm text-muted leading-relaxed">
               {paragraph}
@@ -98,8 +101,8 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10">
-          <Button href="/eventos" size="md">
-            Ver próximos eventos →
+          <Button href="/veranstaltungen" size="md">
+            Nächste Events ansehen →
           </Button>
         </div>
       </div>

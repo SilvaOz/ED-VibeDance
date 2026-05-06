@@ -65,11 +65,11 @@ export function FAQSection() {
       <div className="mx-auto max-w-3xl">
         <FadeUp className="text-center mb-12">
           <p className="font-sans text-xs text-accent-light uppercase tracking-[0.3em] mb-4">
-            Preguntas frecuentes
+            Häufige Fragen
           </p>
           <h2 className="font-display text-5xl font-light text-cream">
-            Todo lo que{" "}
-            <em className="not-italic italic text-accent-light">necesitas saber</em>
+            Alles, was du{" "}
+            <em className="not-italic italic text-accent-light">wissen musst</em>
           </h2>
         </FadeUp>
 

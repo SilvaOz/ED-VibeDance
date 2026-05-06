@@ -1,92 +1,88 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FadeUp } from "@/components/ui/FadeUp";
 
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Artículos sobre Ecstatic Dance, baile consciente, sound healing y vida consciente en Leipzig.",
+    "Artikel über Ecstatic Dance, bewusstes Tanzen, Sound Healing und bewusstes Leben in Leipzig.",
 };
 
-// Placeholder articles until MDX is configured
-const posts = [
+const placeholderPosts = [
   {
-    slug: "que-es-ecstatic-dance",
-    title: "¿Qué es el Ecstatic Dance? Una guía completa",
+    slug: "was-ist-ecstatic-dance",
+    title: "Was ist Ecstatic Dance?",
     excerpt:
-      "El Ecstatic Dance es una práctica de movimiento libre que combina música, comunidad y presencia. Sin coreografías, sin alcohol, sin expectativas.",
+      "Eine Praxis freier Bewegung, bei der kein Schritt falsch ist. Erfahre, wie Ecstatic Dance entstand und was es von anderen Tanzformen unterscheidet.",
     date: "2026-04-15",
-    tags: ["ecstatic dance", "conscious dance", "introducción"],
+    tag: "Grundlagen",
   },
   {
-    slug: "didgeridoo-sound-healing",
-    title: "El didgeridoo como herramienta de sanación",
+    slug: "didgeridoo-heilklang",
+    title: "Didgeridoo: Das Instrument der Heilung",
     excerpt:
-      "El sonido del didgeridoo opera en frecuencias que resuenan con el sistema nervioso. Cómo este instrumento ancestral abre el cuerpo al movimiento.",
-    date: "2026-04-22",
-    tags: ["didgeridoo", "sound healing", "música"],
+      "Das älteste Blasinstrument der Welt erzeugt Klänge, die direkt in den Körper eindringen. Wie Kreisatmung und Oberton den Raum transformieren.",
+    date: "2026-04-01",
+    tag: "Musik",
   },
   {
-    slug: "ecstatic-dance-leipzig-guia",
-    title: "Guía para tu primera noche de Ecstatic Dance en Leipzig",
+    slug: "zehnerkarte-lohnt-sich",
+    title: "Lohnt sich die Zehnerkarte?",
     excerpt:
-      "Qué esperar, qué traer, cómo llegar. Todo lo que necesitas saber antes de tu primera sesión de baile consciente con nosotros.",
-    date: "2026-04-29",
-    tags: ["Leipzig", "primer evento", "guía"],
+      "Ein ehrlicher Vergleich aller Preisoptionen — und warum die Zehnerkarte nicht nur die günstigste, sondern auch die bewussteste Wahl ist.",
+    date: "2026-03-20",
+    tag: "Praktisches",
   },
-] as const;
+];
 
 export default function BlogPage() {
   return (
-    <div className="pt-24 pb-20 px-4">
+    <div className="min-h-screen pt-28 pb-24 px-4">
       <div className="mx-auto max-w-4xl">
-        <div className="text-center mb-16">
-          <p className="font-sans text-xs text-accent-light uppercase tracking-[0.25em] mb-4">
-            Artículos
+        <FadeUp className="text-center mb-16">
+          <p className="font-sans text-xs text-accent-light uppercase tracking-[0.3em] mb-4">
+            Wissen & Inspiration
           </p>
-          <h1 className="font-display text-5xl sm:text-6xl font-light text-cream mb-4">
-            <span className="italic text-accent-light">Blog</span>
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-light text-cream mb-6">
+            Blog
           </h1>
-          <p className="font-sans text-base text-muted max-w-lg mx-auto">
-            Reflexiones sobre movimiento consciente, sonido y vida auténtica.
+          <p className="font-sans text-base text-muted max-w-xl mx-auto leading-relaxed">
+            Hintergründe, Praxis und Geschichten aus der Welt des bewussten
+            Tanzens.
           </p>
-        </div>
+        </FadeUp>
 
         <div className="space-y-6">
-          {posts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group block rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/30 hover:bg-accent/5 transition-all duration-300"
-            >
-              <div className="flex flex-wrap gap-2 mb-3">
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="font-sans text-[10px] text-muted uppercase tracking-widest"
-                  >
-                    #{tag}
+          {placeholderPosts.map((post, i) => (
+            <FadeUp key={post.slug} delay={i * 80}>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="block rounded-2xl border border-white/10 bg-white/5 p-8 hover:border-accent/30 hover:bg-accent/5 transition-all duration-200 group"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="font-sans text-xs text-accent-light uppercase tracking-widest">
+                    {post.tag}
                   </span>
-                ))}
-              </div>
-              <h2 className="font-display text-2xl font-light text-cream mb-2 group-hover:text-accent-light transition-colors">
-                {post.title}
-              </h2>
-              <p className="font-sans text-sm text-muted leading-relaxed mb-4">
-                {post.excerpt}
-              </p>
-              <div className="flex items-center justify-between">
-                <time className="font-sans text-xs text-muted/60">
-                  {new Date(post.date).toLocaleDateString("es-ES", {
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                  })}
-                </time>
-                <span className="font-sans text-xs text-accent-light group-hover:text-cream transition-colors">
-                  Leer artículo →
-                </span>
-              </div>
-            </Link>
+                  <span className="text-white/20">·</span>
+                  <time className="font-sans text-xs text-muted">
+                    {new Date(post.date).toLocaleDateString("de-DE", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </time>
+                </div>
+                <h2 className="font-display text-2xl font-light text-cream mb-3 group-hover:text-accent-light transition-colors">
+                  {post.title}
+                </h2>
+                <p className="font-sans text-sm text-muted leading-relaxed">
+                  {post.excerpt}
+                </p>
+                <p className="font-sans text-xs text-accent-light mt-5">
+                  Weiterlesen →
+                </p>
+              </Link>
+            </FadeUp>
           ))}
         </div>
       </div>

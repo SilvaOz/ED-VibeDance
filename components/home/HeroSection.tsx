@@ -11,7 +11,7 @@ function formatNextEvent() {
   const date = new Date(upcoming.date);
   return {
     event: upcoming,
-    label: date.toLocaleDateString("es-ES", {
+    label: date.toLocaleDateString("de-DE", {
       weekday: "long",
       day: "numeric",
       month: "long",
@@ -25,69 +25,60 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
-      {/* Full-bleed background image */}
       <div className="absolute inset-0">
         <Image
           src={HERO_IMAGE}
-          alt="Ecstatic Dance Leipzig — movimiento consciente"
+          alt="Ecstatic Dance Leipzig — bewusste Bewegung"
           fill
           priority
           className="object-cover object-center"
           sizes="100vw"
         />
-        {/* Multi-layer overlay — dark purple tint */}
         <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/55 to-dark/90" />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/60 via-transparent to-dark/40" />
       </div>
 
-      {/* Animated accent glows (on top of image) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="animate-glow-pulse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-accent/20 blur-[100px]" />
         <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full bg-gold/10 blur-[80px] opacity-60" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6">
-        {/* Eyebrow */}
         <p className="animate-fade-up font-sans text-xs text-gold uppercase tracking-[0.4em] mb-8">
           {siteConfig.fullName}
         </p>
 
-        {/* Main headline */}
         <h1
           className="animate-fade-up font-display font-light text-cream leading-[1.0] mb-6"
           style={{ animationDelay: "100ms" }}
         >
           <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-[100px]">
-            Muévete
+            Bewege dich
           </span>
           <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-[100px] italic text-transparent bg-clip-text bg-gradient-to-r from-accent-light via-cream to-gold">
-            desde el alma
+            aus der Seele
           </span>
         </h1>
 
-        {/* Tagline */}
         <p
           className="animate-fade-up font-sans text-base sm:text-lg text-cream/60 tracking-wider mb-10"
           style={{ animationDelay: "200ms" }}
         >
-          Conscious Dance &nbsp;·&nbsp; Didgeridoo en Vivo &nbsp;·&nbsp; Sacred Sound
+          Conscious Dance &nbsp;·&nbsp; Didgeridoo Live &nbsp;·&nbsp; Sacred Sound
         </p>
 
-        {/* CTAs */}
         <div
           className="animate-fade-up flex flex-col sm:flex-row gap-4 justify-center mb-16"
           style={{ animationDelay: "300ms" }}
         >
-          <Button href="/eventos" size="lg" variant="primary">
-            Reservar entrada
+          <Button href="/veranstaltungen" size="lg" variant="primary">
+            Ticket kaufen
           </Button>
-          <Button href="/que-es" size="lg" variant="outline">
-            ¿Qué es el Ecstatic Dance?
+          <Button href="/was-ist" size="lg" variant="outline">
+            Was ist Ecstatic Dance?
           </Button>
         </div>
 
-        {/* Next event card */}
         {next && (
           <div
             className="animate-fade-up inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 rounded-2xl border border-white/15 bg-dark/50 backdrop-blur-md px-6 py-4"
@@ -99,7 +90,7 @@ export function HeroSection() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
               </span>
               <span className="font-sans text-xs text-muted uppercase tracking-widest">
-                Próxima noche
+                Nächster Abend
               </span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-white/20" />
@@ -108,13 +99,12 @@ export function HeroSection() {
             </p>
             <div className="hidden sm:block w-px h-4 bg-white/20" />
             <p className="font-display text-xl text-gold">
-              desde {next.event.price.earlyBird ?? next.event.price.presale}€
+              ab {next.event.price.earlyBird ?? next.event.price.presale}€
             </p>
           </div>
         )}
       </div>
 
-      {/* Scroll cue */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30">
         <span className="font-sans text-[10px] text-cream uppercase tracking-widest">
           Scroll

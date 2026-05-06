@@ -12,25 +12,22 @@ export function WhatIsSection() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-accent/6 blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        {/* Header */}
         <FadeUp className="text-center mb-16">
           <p className="font-sans text-xs text-accent-light uppercase tracking-[0.3em] mb-4">
             Conscious Dance
           </p>
           <h2 className="font-display text-5xl sm:text-6xl lg:text-7xl font-light text-cream mb-6">
-            ¿Qué es el{" "}
+            Was ist{" "}
             <em className="not-italic italic text-accent-light">Ecstatic Dance?</em>
           </h2>
           <p className="font-sans text-base text-muted max-w-2xl mx-auto leading-relaxed">
-            Una práctica de movimiento libre donde el cuerpo es el maestro. Sin
-            coreografías, sin alcohol, descalzos — solo música, movimiento y presencia total.
-            Cada martes, con didgeridoo en vivo.
+            Eine Praxis freier Bewegung, bei der der Körper der Lehrer ist. Keine
+            Choreografie, kein Alkohol, barfuß — nur Musik, Bewegung und volle Präsenz.
+            Jeden Dienstag, mit Didgeridoo Live.
           </p>
         </FadeUp>
 
-        {/* Two-column layout — rules + image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-12">
-          {/* Rules grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {rules.map((rule, index) => (
               <FadeUp key={index} delay={index * 60}>
@@ -47,35 +44,30 @@ export function WhatIsSection() {
             ))}
           </div>
 
-          {/* Atmospheric image */}
           <FadeUp delay={200}>
             <div className="relative h-[480px] lg:h-[560px] rounded-2xl overflow-hidden">
               <Image
                 src={SECTION_IMAGE}
-                alt="Movimiento consciente — Ecstatic Dance"
+                alt="Bewusste Bewegung — Ecstatic Dance"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-r from-dark/30 via-transparent to-transparent" />
-
-              {/* Caption */}
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="font-display text-2xl font-light text-cream italic">
-                  "El cuerpo sabe lo que el<br />
-                  <span className="text-accent-light">alma necesita."</span>
+                  „Der Körper weiß, was<br />
+                  <span className="text-accent-light">die Seele braucht."</span>
                 </p>
               </div>
             </div>
           </FadeUp>
         </div>
 
-        {/* CTA */}
         <FadeUp className="text-center">
-          <Button href="/que-es" variant="outline">
-            Leer más sobre el Ecstatic Dance
+          <Button href="/was-ist" variant="outline">
+            Mehr über Ecstatic Dance erfahren
           </Button>
         </FadeUp>
       </div>

@@ -6,71 +6,71 @@ export const siteConfig = {
   name: "VibraDance",
   fullName: "Ecstatic Dance Leipzig",
   domain: "ecstaticdanceleipzig.de",
-  tagline: "Conscious Dance · Didgeridoo en Vivo · Sacred Sound",
+  tagline: "Conscious Dance · Didgeridoo Live · Sacred Sound",
   description:
-    "La experiencia de baile consciente más auténtica de Leipzig. Didgeridoo en vivo + DJ, sin alcohol, sin drogas, descalzos — solo música, movimiento y conexión.",
+    "Die authentischste Ecstatic-Dance-Erfahrung in Leipzig. Didgeridoo live + DJ, kein Alkohol, keine Drogen, barfuß — nur Musik, Bewegung und echte Verbindung.",
   instagram: "https://instagram.com/staticdanceleipzig",
   telegram: "https://t.me/ecstaticdanceleipzig",
   email: "hola@ecstaticdanceleipzig.de",
-  eventDay: "Cada martes, 19:30 Uhr, Leipzig",
+  eventDay: "Jeden Dienstag, 19:30 Uhr, Leipzig",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de",
 } as const;
 
-// ─── Reglas del Ecstatic Dance ───────────────────────────────────────────────
+// ─── Regeln des Ecstatic Dance ───────────────────────────────────────────────
 
 export const rules = [
   {
     icon: "🦶",
-    title: "Descalzos",
-    description: "Conexión con el suelo y con el momento presente.",
+    title: "Barfuß",
+    description: "Verbindung mit dem Boden und dem gegenwärtigen Moment.",
   },
   {
     icon: "🤫",
-    title: "Sin palabras en la pista",
-    description: "Entramos en estado meditativo. El cuerpo habla.",
+    title: "Kein Sprechen auf der Tanzfläche",
+    description: "Wir treten in einen meditativen Zustand. Der Körper spricht.",
   },
   {
     icon: "🚫",
-    title: "Sin alcohol ni drogas",
-    description: "El natural high es suficiente. Presencia total.",
+    title: "Kein Alkohol, keine Drogen",
+    description: "Das natürliche High reicht aus. Vollständige Präsenz.",
   },
   {
     icon: "📵",
-    title: "Sin teléfono",
-    description: "Presencia total. Vives el momento, no lo grabas.",
+    title: "Handyfrei",
+    description: "Volle Präsenz. Du erlebst den Moment — du filmst ihn nicht.",
   },
   {
     icon: "🙏",
-    title: "Respeto",
-    description: "Espacio seguro para todos los cuerpos y expresiones.",
+    title: "Respekt",
+    description: "Ein sicherer Raum für alle Körper und Ausdrucksformen.",
   },
   {
     icon: "✨",
-    title: "Autenticidad",
-    description: "Muévete como sientes. No hay pasos correctos o incorrectos.",
+    title: "Authentizität",
+    description: "Bewege dich so, wie du fühlst. Es gibt keine richtigen oder falschen Schritte.",
   },
 ] as const;
 
-// ─── Formato del evento ───────────────────────────────────────────────────────
+// ─── Veranstaltungsformat ─────────────────────────────────────────────────────
 
 export const eventSchedule = [
-  { time: "19:30", label: "Apertura de puertas" },
-  { time: "19:45", label: "Cierre de puertas (puntualidad importante)" },
-  { time: "20:00", label: "Ritual de apertura + primeras notas de Didgeridoo" },
-  { time: "20:15", label: "Ecstatic Dance: Didgeridoo en vivo + DJ (2h)" },
-  { time: "22:00", label: "Sound Healing / Live Chillout: cuencos, handpan" },
-  { time: "22:30", label: "Cierre y silencio compartido" },
+  { time: "19:30", label: "Einlass" },
+  { time: "19:45", label: "Türen schließen (Pünktlichkeit wichtig)" },
+  { time: "20:00", label: "Eröffnungsritual + erste Didgeridoo-Klänge" },
+  { time: "20:15", label: "Ecstatic Dance: Didgeridoo Live + DJ (2 Std.)" },
+  { time: "22:00", label: "Sound Healing / Live Chillout: Klangschalen, Handpan" },
+  { time: "22:30", label: "Abschluss und gemeinsames Schweigen" },
 ] as const;
 
-// ─── Eventos ─────────────────────────────────────────────────────────────────
+// ─── Veranstaltungen ──────────────────────────────────────────────────────────
 
 export const events: Event[] = [
   {
     id: "evt-001",
-    slug: "ecstatic-dance-leipzig-13-mayo-2026",
+    slug: "ecstatic-dance-leipzig-13-mai-2026",
     date: "2026-05-13T19:30:00",
     title: "Ecstatic Dance Leipzig",
-    subtitle: "Didgeridoo en Vivo + La Lvcha",
+    subtitle: "Didgeridoo Live + La Lvcha",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "Studio Bewegungsraum",
@@ -86,7 +86,7 @@ export const events: Event[] = [
     capacity: 60,
     soldOut: false,
     description:
-      "Una noche de baile consciente, sonido en vivo y presencia total. Oscar Silva abre con didgeridoo ancestral mientras La Lvcha teje una journey de rituales tropicales y electrónica contemporánea.",
+      "Ein Abend voller bewusster Bewegung, Liveklang und vollständiger Präsenz. Oscar Silva eröffnet mit ancestralem Didgeridoo, während La Lvcha eine zweistündige Journey aus ritualem Tropical und zeitgenössischer Elektronik webt.",
     tags: [
       "ecstatic dance",
       "didgeridoo",
@@ -97,10 +97,10 @@ export const events: Event[] = [
   },
   {
     id: "evt-002",
-    slug: "ecstatic-dance-leipzig-20-mayo-2026",
+    slug: "ecstatic-dance-leipzig-20-mai-2026",
     date: "2026-05-20T19:30:00",
     title: "Ecstatic Dance Leipzig",
-    subtitle: "Full Moon Edition",
+    subtitle: "Vollmond Edition",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "Studio Bewegungsraum",
@@ -116,10 +116,10 @@ export const events: Event[] = [
     capacity: 60,
     soldOut: false,
     description:
-      "Edición especial Luna Llena. La energía de la luna amplifica cada movimiento, cada sonido, cada conexión. Una noche para soltar y transformar.",
+      "Sonderausgabe zur Vollmondnacht. Die Energie des Mondes verstärkt jede Bewegung, jeden Klang, jede Verbindung. Eine Nacht zum Loslassen und Transformieren.",
     tags: [
       "ecstatic dance",
-      "full moon",
+      "vollmond",
       "didgeridoo",
       "Leipzig",
       "sound healing",
@@ -127,10 +127,10 @@ export const events: Event[] = [
   },
   {
     id: "evt-003",
-    slug: "ecstatic-dance-leipzig-27-mayo-2026",
+    slug: "ecstatic-dance-leipzig-27-mai-2026",
     date: "2026-05-27T19:30:00",
     title: "Ecstatic Dance Leipzig",
-    subtitle: "Raíces del Sonido",
+    subtitle: "Wurzeln des Klangs",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "Studio Bewegungsraum",
@@ -146,12 +146,12 @@ export const events: Event[] = [
     capacity: 60,
     soldOut: false,
     description:
-      "Un viaje a las raíces del sonido. Didgeridoo australiano, ritmos afrolatinos y electrónica tribal se fusionan en una experiencia que mueve el alma.",
+      "Eine Reise zu den Wurzeln des Klangs. Australisches Didgeridoo, afrolateinische Rhythmen und Tribal-Elektronik verschmelzen zu einer Erfahrung, die die Seele bewegt.",
     tags: ["ecstatic dance", "tribal", "didgeridoo", "Leipzig"],
   },
 ];
 
-// ─── Artistas ─────────────────────────────────────────────────────────────────
+// ─── Künstler ─────────────────────────────────────────────────────────────────
 
 export const artists: Artist[] = [
   {
@@ -159,19 +159,19 @@ export const artists: Artist[] = [
     slug: "oscar-silva",
     name: "Oscar Silva",
     role: "live-musician",
-    origin: "Perú / Leipzig",
-    bio: "Maestro de didgeridoo con raíces en el Valle Sagrado de Perú. Facilita el espacio con sonido ancestral que abre el cuerpo al movimiento.",
+    origin: "Peru / Leipzig",
+    bio: "Didgeridoo-Meister mit Wurzeln im Heiligen Tal Perus. Er öffnet den Raum mit ancestralem Klang, der den Körper zur Bewegung einlädt.",
     longBio:
-      "Oscar Silva nació en las alturas del Valle Sagrado peruano y hoy vive y crea en Leipzig. Su relación con el didgeridoo va más allá del instrumento: es una práctica de presencia, de respiración circular y de conexión con la tierra. Cada martes, sus tonos abren el portal del Ecstatic Dance.",
+      "Oscar Silva wurde in den Höhen des Heiligen Tals Perus geboren und lebt heute in Leipzig. Seine Beziehung zum Didgeridoo geht weit über das Instrument hinaus: Es ist eine Praxis der Präsenz, der Kreisatmung und der Verbindung mit der Erde. Jeden Dienstag öffnet sein Klang das Portal des Ecstatic Dance.",
     instagram: "https://instagram.com/oscarsilva",
     image:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&auto=format&q=80&fit=crop",
     genres: [
-      "didgeridoo",
-      "sound healing",
-      "ritual music",
-      "shamanic",
-      "ambient",
+      "Didgeridoo",
+      "Sound Healing",
+      "Ritualmusik",
+      "Schamanisch",
+      "Ambient",
     ],
   },
   {
@@ -180,32 +180,32 @@ export const artists: Artist[] = [
     name: "La Lvcha",
     role: "dj",
     origin: "Leipzig",
-    bio: 'DJ residente. "Ritual-inspired tropical clubbing & sonic dance experiences." Fusiona raíces afrolatinas con electrónica contemporánea.',
+    bio: 'Resident-DJ. "Ritual-inspired tropical clubbing & sonic dance experiences." Verbindet afrolateinische Wurzeln mit zeitgenössischer Elektronik.',
     longBio:
-      "La Lvcha es una artista que habita la intersección entre la tradición afrolatina y la vanguardia electrónica. Sus sets son ceremonias de sonido — no mezcla canciones, construye journeys. Como residente de Ecstatic Dance Leipzig, es la arquitecta musical de cada martes.",
+      "La Lvcha ist eine Künstlerin, die an der Schnittstelle zwischen afrolateinischer Tradition und elektronischer Avantgarde lebt. Ihre Sets sind Klangzeremonien — sie mischt keine Songs, sie erschafft Journeys. Als Resident-DJ von Ecstatic Dance Leipzig ist sie die musikalische Architektin jedes Dienstags.",
     website: "https://lalvcha.com",
     instagram: "https://instagram.com/lalvcha",
     image:
       "https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=600&auto=format&q=80&fit=crop",
     genres: [
-      "tropical clubbing",
-      "afrolatino",
-      "ritual house",
-      "organic electronic",
+      "Tropical Clubbing",
+      "Afrolateinisch",
+      "Ritual House",
+      "Organic Electronic",
     ],
   },
 ];
 
-// ─── Productos ────────────────────────────────────────────────────────────────
+// ─── Produkte (deaktiviert — nur Events) ─────────────────────────────────────
 
 export const products: Product[] = [
   {
     id: "prod-001",
     slug: "rape-amazonico-artesanal",
-    name: "Rapé Amazónico Artesanal",
+    name: "Handgefertigtes Amazonas-Rapé",
     description:
-      "Mezcla ceremonial de tabaco mapacho y plantas sagradas del Amazonas. Preparado con intención, para la limpieza energética y la claridad mental.",
-    price: 2500, // 25€ en céntimos
+      "Zeremonielle Mischung aus Mapacho-Tabak und heiligen Amazonaspflanzen. Mit Intention zubereitet — für energetische Reinigung und mentale Klarheit.",
+    price: 2500,
     currency: "eur",
     category: "rapé",
     inStock: true,
@@ -213,19 +213,19 @@ export const products: Product[] = [
   },
   {
     id: "prod-002",
-    slug: "musica-meditacion-432hz",
-    name: "Música de Meditación 432Hz",
+    slug: "meditation-musik-432hz",
+    name: "Meditationsmusik 432Hz (Download)",
     description:
-      "Álbum de descarga digital. Grabaciones de didgeridoo a 432Hz — la frecuencia del universo. Para meditación, yoga, descanso profundo y alineación interior.",
-    price: 1000, // 10€ en céntimos
+      "Digitales Album. Didgeridoo-Aufnahmen bei 432Hz — der Frequenz des Universums. Für Meditation, Yoga, Tiefenentspannung und innere Ausrichtung.",
+    price: 1000,
     currency: "eur",
-    category: "música",
+    category: "música" as "música",
     inStock: true,
     digital: true,
   },
 ];
 
-// ─── Zehnerkarte ─────────────────────────────────────────────────────────────
+// ─── Zehnerkarte ──────────────────────────────────────────────────────────────
 
 interface ComparisonItem {
   label: string;
@@ -240,14 +240,14 @@ export const zehnerkarte: {
   description: string;
   comparison: ComparisonItem[];
 } = {
-  price: 100, // €
+  price: 100,
   pricePerNight: 10,
   validMonths: 24,
   description:
-    "10 entradas para usar cuando quieras. Sin fecha fija, válida 2 años. Recibes tu tarjeta física en el primer evento.",
+    "10 Eintritte nach Belieben nutzen. Kein festes Datum, 2 Jahre gültig. Du erhältst deine physische Karte beim ersten Event.",
   comparison: [
-    { label: "Taquilla", price: 15 },
-    { label: "Preventa", price: 12 },
+    { label: "Abendkasse", price: 15 },
+    { label: "Vorverkauf", price: 12 },
     { label: "Early Bird", price: 8 },
     { label: "Zehnerkarte", price: 10, highlight: true },
   ],
@@ -257,45 +257,44 @@ export const zehnerkarte: {
 
 export const faqs = [
   {
-    question: "¿Es necesario saber bailar?",
+    question: "Muss ich tanzen können?",
     answer:
-      "No. En el Ecstatic Dance no hay pasos correctos o incorrectos. Tu único maestro eres tú mismo. Todos los cuerpos son bienvenidos.",
+      "Nein. Beim Ecstatic Dance gibt es keine richtigen oder falschen Schritte. Dein einziger Lehrer bist du selbst. Alle Körper sind willkommen.",
   },
   {
-    question: "¿Qué debo traer?",
+    question: "Was soll ich mitbringen?",
     answer:
-      "Ropa cómoda para moverte, agua, y ganas de explorar. No traer alcohol, drogas ni perfumes fuertes. Llegamos descalzos.",
+      "Bequeme Kleidung zum Bewegen, Wasser und Lust zum Erkunden. Bitte keinen Alkohol, keine Drogen und keine starken Parfüms. Wir tanzen barfuß.",
   },
   {
-    question: "¿Puedo llegar tarde?",
+    question: "Kann ich zu spät kommen?",
     answer:
-      "Las puertas cierran a las 19:45 para proteger el espacio sagrado del evento. Por favor, llega puntual.",
+      "Die Türen schließen um 19:45 Uhr, um den heiligen Raum des Events zu schützen. Bitte sei pünktlich.",
   },
   {
-    question: "¿Qué es la Zehnerkarte?",
+    question: "Was ist die Zehnerkarte?",
     answer:
-      "Es un bono de 10 entradas por 100€ (10€ por noche). Válida durante 2 años desde la compra. Puedes usarla cualquier martes, sin fecha fija.",
+      "Ein Gutschein für 10 Eintritte für 100 € (10 € pro Abend). Gültig 2 Jahre ab Kauf. Du kannst sie an jedem Dienstag nutzen, ohne festes Datum.",
   },
   {
-    question: "¿Puedo venir solo/a?",
+    question: "Kann ich alleine kommen?",
     answer:
-      "Absolutamente. La mayoría de personas vienen solas. El espacio está diseñado para que te conectes contigo mismo primero, y con otros desde esa autenticidad.",
+      "Absolut. Die meisten Menschen kommen alleine. Der Raum ist so gestaltet, dass du dich zuerst mit dir selbst verbindest — und von dort aus authentisch mit anderen.",
   },
   {
-    question: "¿Hay nivel de condición física requerido?",
+    question: "Gibt es körperliche Anforderungen?",
     answer:
-      "Ninguno. Puedes moverte suave, intenso, sentarte, acostarte. El movimiento es tuyo. Personas de todas las edades y capacidades son bienvenidas.",
+      "Keine. Du kannst dich sanft, intensiv, sitzend oder liegend bewegen. Menschen aller Altersgruppen und Fähigkeiten sind willkommen.",
   },
 ] as const;
 
-// ─── Navigation ─────────────────────────────────────────────────────────────
+// ─── Navigation ───────────────────────────────────────────────────────────────
 
 export const navLinks = [
-  { label: "¿Qué es?", href: "/que-es" },
-  { label: "Eventos", href: "/eventos" },
-  { label: "Artistas", href: "/artistas" },
+  { label: "Was ist ED?", href: "/was-ist" },
+  { label: "Events", href: "/veranstaltungen" },
+  { label: "Künstler", href: "/kuenstler" },
   { label: "Zehnerkarte", href: "/zehnerkarte" },
-  { label: "Tienda", href: "/tienda" },
   { label: "Blog", href: "/blog" },
-  { label: "Comunidad", href: "/comunidad" },
+  { label: "Community", href: "/community" },
 ] as const;
