@@ -91,8 +91,7 @@ export const events: Event[] = [
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "ZiMMT Leipzig",
     address: "Torgauer Straße 80, 04318 Leipzig",
-    image:
-      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80&fit=crop",
+    image: "/banner-ecstatic-dance.png",
     price: {
       earlyBird: 8,
       presale: 12,
@@ -121,8 +120,7 @@ export const events: Event[] = [
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "ZiMMT Leipzig",
     address: "Torgauer Straße 80, 04318 Leipzig",
-    image:
-      "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&auto=format&q=80&fit=crop",
+    image: "/banner-ecstatic-dance.png",
     price: {
       earlyBird: 8,
       presale: 12,
@@ -151,8 +149,7 @@ export const events: Event[] = [
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "ZiMMT Leipzig",
     address: "Torgauer Straße 80, 04318 Leipzig",
-    image:
-      "https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=800&auto=format&q=80&fit=crop",
+    image: "/banner-ecstatic-dance.png",
     price: {
       earlyBird: 8,
       presale: 12,
