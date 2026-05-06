@@ -28,7 +28,7 @@ export const siteConfig = {
   instagram: "https://instagram.com/staticdanceleipzig",
   telegram: "https://t.me/ecstaticdanceleipzig",
   email: "hola@ecstaticdanceleipzig.de",
-  eventDay: "Jeden Dienstag, 19:30 Uhr, Leipzig",
+  eventDay: "Jeden Dienstag, 18:00 – 21:00 Uhr, Leipzig",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de",
 } as const;
 
@@ -70,12 +70,11 @@ export const rules = [
 // ─── Veranstaltungsformat ─────────────────────────────────────────────────────
 
 export const eventSchedule = [
-  { time: "19:30", label: "Einlass" },
-  { time: "19:45", label: "Türen schließen (Pünktlichkeit wichtig)" },
-  { time: "20:00", label: "Eröffnungsritual + erste Didgeridoo-Klänge" },
-  { time: "20:15", label: "Ecstatic Dance: Didgeridoo Live + DJ (2 Std.)" },
-  { time: "22:00", label: "Sound Healing / Live Chillout: Klangschalen, Handpan" },
-  { time: "22:30", label: "Abschluss und gemeinsames Schweigen" },
+  { time: "18:00", label: "Einlass" },
+  { time: "18:15", label: "Eröffnungsritual + erste Didgeridoo-Klänge" },
+  { time: "18:30", label: "Ecstatic Dance: Didgeridoo Live + La Lvcha" },
+  { time: "20:30", label: "Sound Healing / Ausklang" },
+  { time: "21:00", label: "Ende" },
 ] as const;
 
 // ─── Veranstaltungen ──────────────────────────────────────────────────────────
@@ -84,24 +83,22 @@ export const events: Event[] = [
   {
     id: "evt-001",
     slug: "ecstatic-dance-leipzig-12-mai-2026",
-    date: "2026-05-12T19:30:00",
+    date: "2026-05-12T18:00:00",
     title: "Ecstatic Dance Leipzig",
-    subtitle: "Didgeridoo Live + La Lvcha",
+    subtitle: "Sound & Dance Ritual mit La Lvcha",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "ZiMMT Leipzig",
     address: "Torgauer Straße 80, 04318 Leipzig",
     image: "/banner-ecstatic-dance.png",
     price: {
-      earlyBird: 8,
-      presale: 12,
-      door: 15,
-      support: 20,
+      presale: 18,
+      door: 18,
     },
     capacity: 60,
     soldOut: false,
     description:
-      "Ein Abend voller bewusster Bewegung, Liveklang und vollständiger Präsenz. Oscar Silva eröffnet mit ancestralem Didgeridoo, während La Lvcha eine zweistündige Journey aus ritualem Tropical und zeitgenössischer Elektronik webt.",
+      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. Die kolumbianische DJ und Klangkünstlerin La Lvcha gestaltet eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet und zum freien Tanzen einlädt.",
     tags: [
       "ecstatic dance",
       "didgeridoo",
@@ -113,24 +110,22 @@ export const events: Event[] = [
   {
     id: "evt-002",
     slug: "ecstatic-dance-leipzig-19-mai-2026",
-    date: "2026-05-19T19:30:00",
+    date: "2026-05-19T18:00:00",
     title: "Ecstatic Dance Leipzig",
-    subtitle: "Vollmond Edition",
+    subtitle: "Sound & Dance Ritual mit La Lvcha",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "ZiMMT Leipzig",
     address: "Torgauer Straße 80, 04318 Leipzig",
     image: "/banner-ecstatic-dance.png",
     price: {
-      earlyBird: 8,
-      presale: 12,
-      door: 15,
-      support: 20,
+      presale: 18,
+      door: 18,
     },
     capacity: 60,
     soldOut: false,
     description:
-      "Sonderausgabe zur Vollmondnacht. Die Energie des Mondes verstärkt jede Bewegung, jeden Klang, jede Verbindung. Eine Nacht zum Loslassen und Transformieren.",
+      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. Die kolumbianische DJ und Klangkünstlerin La Lvcha gestaltet eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet und zum freien Tanzen einlädt.",
     tags: [
       "ecstatic dance",
       "vollmond",
@@ -142,24 +137,22 @@ export const events: Event[] = [
   {
     id: "evt-003",
     slug: "ecstatic-dance-leipzig-26-mai-2026",
-    date: "2026-05-26T19:30:00",
+    date: "2026-05-26T18:00:00",
     title: "Ecstatic Dance Leipzig",
-    subtitle: "Wurzeln des Klangs",
+    subtitle: "Sound & Dance Ritual mit La Lvcha",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "ZiMMT Leipzig",
     address: "Torgauer Straße 80, 04318 Leipzig",
     image: "/banner-ecstatic-dance.png",
     price: {
-      earlyBird: 8,
-      presale: 12,
-      door: 15,
-      support: 20,
+      presale: 18,
+      door: 18,
     },
     capacity: 60,
     soldOut: false,
     description:
-      "Eine Reise zu den Wurzeln des Klangs. Australisches Didgeridoo, afrolateinische Rhythmen und Tribal-Elektronik verschmelzen zu einer Erfahrung, die die Seele bewegt.",
+      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. Die kolumbianische DJ und Klangkünstlerin La Lvcha gestaltet eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet und zum freien Tanzen einlädt.",
     tags: ["ecstatic dance", "tribal", "didgeridoo", "Leipzig"],
   },
 ];
@@ -192,10 +185,10 @@ export const artists: Artist[] = [
     slug: "la-lvcha",
     name: "La Lvcha",
     role: "dj",
-    origin: "Leipzig",
-    bio: 'Resident-DJ. "Ritual-inspired tropical clubbing & sonic dance experiences." Verbindet afrolateinische Wurzeln mit zeitgenössischer Elektronik.',
+    origin: "Kolumbien / Leipzig",
+    bio: "Kolumbianische DJ und Klangkünstlerin. Ihre vielschichtigen Klangreisen verbinden elektronische Musik mit globalen Rhythmen und laden zum freien Tanzen ein.",
     longBio:
-      "La Lvcha ist eine Künstlerin, die an der Schnittstelle zwischen afrolateinischer Tradition und elektronischer Avantgarde lebt. Ihre Sets sind Klangzeremonien — sie mischt keine Songs, sie erschafft Journeys. Als Resident-DJ von Ecstatic Dance Leipzig ist sie die musikalische Architektin jedes Dienstags.",
+      "La Lvcha ist eine kolumbianische DJ und Klangkünstlerin, die an der Schnittstelle zwischen afrolateinischer Tradition und elektronischer Avantgarde lebt. Ihre Sets sind Klangzeremonien — sie mischt keine Songs, sie erschafft Journeys. Als Resident-DJ von Ecstatic Dance Leipzig im ZiMMT ist sie die musikalische Architektin jedes Dienstags.",
     website: "https://lalvcha.com",
     instagram: "https://instagram.com/lalvcha",
     image:
@@ -259,9 +252,7 @@ export const zehnerkarte: {
   description:
     "10 Eintritte nach Belieben nutzen. Kein festes Datum, 2 Jahre gültig. Du erhältst deine physische Karte beim ersten Event.",
   comparison: [
-    { label: "Abendkasse", price: 15 },
-    { label: "Vorverkauf", price: 12 },
-    { label: "Early Bird", price: 8 },
+    { label: "Abendkasse", price: 18 },
     { label: "Zehnerkarte", price: 10, highlight: true },
   ],
 };
@@ -282,7 +273,7 @@ export const faqs = [
   {
     question: "Kann ich zu spät kommen?",
     answer:
-      "Die Türen schließen um 19:45 Uhr, um den heiligen Raum des Events zu schützen. Bitte sei pünktlich.",
+      "Der Einlass beginnt um 18:00 Uhr. Das Event endet um 21:00 Uhr. Bitte sei pünktlich — der Raum öffnet gemeinsam.",
   },
   {
     question: "Was ist die Zehnerkarte?",
