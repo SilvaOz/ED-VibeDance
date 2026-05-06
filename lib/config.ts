@@ -28,7 +28,7 @@ export const siteConfig = {
   instagram: "https://instagram.com/staticdanceleipzig",
   telegram: "https://t.me/ecstaticdanceleipzig",
   email: "hola@ecstaticdanceleipzig.de",
-  eventDay: "Jeden Dienstag, 18:00 – 21:00 Uhr, Leipzig",
+  eventDay: "Jeden Dienstag, 19:00 – 22:00 Uhr, Leipzig",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de",
 } as const;
 
@@ -70,11 +70,11 @@ export const rules = [
 // ─── Veranstaltungsformat ─────────────────────────────────────────────────────
 
 export const eventSchedule = [
-  { time: "18:00", label: "Einlass" },
-  { time: "18:15", label: "Eröffnungsritual + erste Didgeridoo-Klänge" },
-  { time: "18:30", label: "Ecstatic Dance: Didgeridoo Live + La Lvcha" },
-  { time: "20:30", label: "Sound Healing / Ausklang" },
-  { time: "21:00", label: "Ende" },
+  { time: "19:00", label: "Einlass — Türen öffnen" },
+  { time: "19:30", label: "Türen schließen — der Raum beginnt" },
+  { time: "19:30 – 21:30", label: "Ecstatic Dance mit DJ La Lvcha (manchmal eröffnet Didgeridoo den Raum)" },
+  { time: "~21:30", label: "Sound Journey: Handpan, Klangschalen, Flöten, Didgeridoo & mehr — je nach Abend variabel" },
+  { time: "22:00", label: "Ende" },
 ] as const;
 
 // ─── Veranstaltungen ──────────────────────────────────────────────────────────
@@ -98,7 +98,7 @@ export const events: Event[] = [
     capacity: 60,
     soldOut: false,
     description:
-      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. Die kolumbianische DJ und Klangkünstlerin La Lvcha gestaltet eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet und zum freien Tanzen einlädt.",
+      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. La Lvcha führt durch eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet. Jeder Abend schließt mit einer gemeinsamen Sound Journey — Handpan, Klangschalen, Flöten, Didgeridoo und mehr. Kein Abend ist wie der andere.",
     tags: [
       "ecstatic dance",
       "didgeridoo",
@@ -125,7 +125,7 @@ export const events: Event[] = [
     capacity: 60,
     soldOut: false,
     description:
-      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. Die kolumbianische DJ und Klangkünstlerin La Lvcha gestaltet eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet und zum freien Tanzen einlädt.",
+      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. La Lvcha führt durch eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet. Jeder Abend schließt mit einer gemeinsamen Sound Journey — Handpan, Klangschalen, Flöten, Didgeridoo und mehr. Kein Abend ist wie der andere.",
     tags: [
       "ecstatic dance",
       "vollmond",
@@ -152,7 +152,7 @@ export const events: Event[] = [
     capacity: 60,
     soldOut: false,
     description:
-      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. Die kolumbianische DJ und Klangkünstlerin La Lvcha gestaltet eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet und zum freien Tanzen einlädt.",
+      "Ecstatic Dance schafft einen offenen Raum, um durch Musik und Bewegung aus dem Alltag auszusteigen und wieder in Verbindung mit dem eigenen Körper zu kommen. La Lvcha führt durch eine vielschichtige Klangreise, die elektronische Musik mit globalen Rhythmen verbindet. Jeder Abend schließt mit einer gemeinsamen Sound Journey — Handpan, Klangschalen, Flöten, Didgeridoo und mehr. Kein Abend ist wie der andere.",
     tags: ["ecstatic dance", "tribal", "didgeridoo", "Leipzig"],
   },
 ];
@@ -168,7 +168,7 @@ export const artists: Artist[] = [
     origin: "Peru / Leipzig",
     bio: "Didgeridoo-Meister mit Wurzeln im Heiligen Tal Perus. Er öffnet den Raum mit ancestralem Klang, der den Körper zur Bewegung einlädt.",
     longBio:
-      "Oscar Silva wurde in den Höhen des Heiligen Tals Perus geboren und lebt heute in Leipzig. Seine Beziehung zum Didgeridoo geht weit über das Instrument hinaus: Es ist eine Praxis der Präsenz, der Kreisatmung und der Verbindung mit der Erde. Jeden Dienstag öffnet sein Klang das Portal des Ecstatic Dance.",
+      "Oscar Silva wurde in den Höhen des Heiligen Tals Perus geboren und lebt heute in Leipzig. Seine Beziehung zum Didgeridoo geht weit über das Instrument hinaus: Es ist eine Praxis der Präsenz, der Kreisatmung und der Verbindung mit der Erde. Gemeinsam mit La Lvcha gestaltet er am Ende jedes Abends eine Sound Journey mit Handpan, Klangschalen, Flöten, Didgeridoo und weiteren Instrumenten — manchmal auch am Anfang. Kein Abend ist wie der andere.",
     instagram: "https://instagram.com/oscarsilva",
     image:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&auto=format&q=80&fit=crop",
@@ -273,7 +273,7 @@ export const faqs = [
   {
     question: "Kann ich zu spät kommen?",
     answer:
-      "Der Einlass beginnt um 18:00 Uhr. Das Event endet um 21:00 Uhr. Bitte sei pünktlich — der Raum öffnet gemeinsam.",
+      "Die Türen öffnen um 19:00 Uhr und schließen um 19:30 Uhr. Das Event endet um 22:00 Uhr. Bitte sei pünktlich — der Raum beginnt gemeinsam.",
   },
   {
     question: "Was ist die Zehnerkarte?",
