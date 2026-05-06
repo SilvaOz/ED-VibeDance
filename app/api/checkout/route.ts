@@ -1,9 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
-import Stripe from "stripe";
 import { events, products, zehnerkarte, siteConfig } from "@/lib/config";
 
+export const dynamic = "force-dynamic";
+
 export async function GET(request: NextRequest) {
-  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+  const key = process.env.STRIPE_SECRET_KEY;
+  if (!key) {
+    return NextResponse.json({ error: "Stripe not configured" }, { status: 503 });
+  }
+
+  const { default: Stripe } = await import("stripe");
+  const stripe = new Stripe(key);
 
   const { searchParams } = new URL(request.url);
   const eventId = searchParams.get("eventId");
@@ -11,7 +18,7 @@ export async function GET(request: NextRequest) {
   const productType = searchParams.get("product");
 
   try {
-    let lineItems: Stripe.Checkout.SessionCreateParams["line_items"] = [];
+    let lineItems: import("stripe").Stripe.Checkout.SessionCreateParams["line_items"] = [];
 
     if (productType === "zehnerkarte") {
       lineItems = [

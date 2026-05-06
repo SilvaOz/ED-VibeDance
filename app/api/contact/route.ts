@@ -1,9 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
 import { siteConfig } from "@/lib/config";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(request: NextRequest) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
+  const resendKey = process.env.RESEND_API_KEY;
+  if (!resendKey) {
+    return NextResponse.json({ error: "Email not configured" }, { status: 503 });
+  }
+
+  const { Resend } = await import("resend");
+  const resend = new Resend(resendKey);
 
   let body: Record<string, string>;
 
