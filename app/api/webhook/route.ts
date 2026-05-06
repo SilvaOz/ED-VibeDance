@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 export async function POST(request: NextRequest) {
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+
   const body = await request.text();
   const signature = request.headers.get("stripe-signature");
 
@@ -32,7 +32,6 @@ export async function POST(request: NextRequest) {
       const session = event.data.object as Stripe.Checkout.Session;
       console.log("Payment successful:", session.id);
       // TODO: Send confirmation email via Resend
-      // TODO: Log purchase in database
       break;
     }
     case "payment_intent.payment_failed": {

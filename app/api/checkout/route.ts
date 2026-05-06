@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { events, products, zehnerkarte, siteConfig } from "@/lib/config";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 export async function GET(request: NextRequest) {
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+
   const { searchParams } = new URL(request.url);
   const eventId = searchParams.get("eventId");
   const productId = searchParams.get("productId");
@@ -78,8 +78,8 @@ export async function GET(request: NextRequest) {
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items: lineItems,
-      success_url: `${siteConfig.url}/eventos?payment=success`,
-      cancel_url: `${siteConfig.url}/eventos?payment=cancelled`,
+      success_url: `${siteConfig.url}/veranstaltungen?payment=success`,
+      cancel_url: `${siteConfig.url}/veranstaltungen?payment=cancelled`,
       payment_method_types: ["card"],
       locale: "de",
     });
