@@ -75,6 +75,8 @@ export const events: Event[] = [
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "Studio Bewegungsraum",
     address: "Karl-Liebknecht-Str. 42, 04107 Leipzig",
+    image:
+      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80&fit=crop",
     price: {
       earlyBird: 8,
       presale: 12,
@@ -103,6 +105,8 @@ export const events: Event[] = [
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "Studio Bewegungsraum",
     address: "Karl-Liebknecht-Str. 42, 04107 Leipzig",
+    image:
+      "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&auto=format&q=80&fit=crop",
     price: {
       earlyBird: 8,
       presale: 12,
@@ -131,6 +135,8 @@ export const events: Event[] = [
     liveAct: "Oscar Silva (Didgeridoo)",
     venue: "Studio Bewegungsraum",
     address: "Karl-Liebknecht-Str. 42, 04107 Leipzig",
+    image:
+      "https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=800&auto=format&q=80&fit=crop",
     price: {
       earlyBird: 8,
       presale: 12,
@@ -158,6 +164,8 @@ export const artists: Artist[] = [
     longBio:
       "Oscar Silva nació en las alturas del Valle Sagrado peruano y hoy vive y crea en Leipzig. Su relación con el didgeridoo va más allá del instrumento: es una práctica de presencia, de respiración circular y de conexión con la tierra. Cada martes, sus tonos abren el portal del Ecstatic Dance.",
     instagram: "https://instagram.com/oscarsilva",
+    image:
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&auto=format&q=80&fit=crop",
     genres: [
       "didgeridoo",
       "sound healing",
@@ -177,6 +185,8 @@ export const artists: Artist[] = [
       "La Lvcha es una artista que habita la intersección entre la tradición afrolatina y la vanguardia electrónica. Sus sets son ceremonias de sonido — no mezcla canciones, construye journeys. Como residente de Ecstatic Dance Leipzig, es la arquitecta musical de cada martes.",
     website: "https://lalvcha.com",
     instagram: "https://instagram.com/lalvcha",
+    image:
+      "https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=600&auto=format&q=80&fit=crop",
     genres: [
       "tropical clubbing",
       "afrolatino",

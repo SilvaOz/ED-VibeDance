@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { faqs } from "@/lib/config";
+import { FadeUp } from "@/components/ui/FadeUp";
 
 function FAQItem({
   question,
@@ -15,19 +16,26 @@ function FAQItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="border border-white/10 rounded-2xl overflow-hidden transition-all duration-200 hover:border-white/20">
+    <div
+      className={[
+        "rounded-2xl border overflow-hidden transition-all duration-300",
+        isOpen ? "border-accent/30 bg-accent/5" : "border-white/10 bg-white/5",
+      ].join(" ")}
+    >
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between px-6 py-5 text-left bg-white/5 hover:bg-white/8 transition-colors"
+        className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-white/3 transition-colors"
         aria-expanded={isOpen}
       >
-        <span className="font-display text-lg font-light text-cream pr-4">
+        <span className="font-display text-xl font-light text-cream pr-6">
           {question}
         </span>
         <span
           className={[
-            "flex-shrink-0 w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-muted transition-all duration-300",
-            isOpen ? "rotate-45 border-accent/40 text-accent-light bg-accent/10" : "",
+            "flex-shrink-0 w-7 h-7 rounded-full border flex items-center justify-center transition-all duration-300",
+            isOpen
+              ? "border-accent/50 bg-accent/20 text-accent-light rotate-45"
+              : "border-white/20 text-muted",
           ].join(" ")}
         >
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
@@ -37,11 +45,11 @@ function FAQItem({
       </button>
       <div
         className={[
-          "overflow-hidden transition-all duration-300",
-          isOpen ? "max-h-96" : "max-h-0",
+          "overflow-hidden transition-all duration-400 ease-out",
+          isOpen ? "max-h-80" : "max-h-0",
         ].join(" ")}
       >
-        <p className="font-sans text-sm text-muted leading-relaxed px-6 py-5 border-t border-white/5">
+        <p className="font-sans text-sm text-muted leading-relaxed px-6 pb-6 border-t border-white/5 pt-4">
           {answer}
         </p>
       </div>
@@ -55,25 +63,26 @@ export function FAQSection() {
   return (
     <section className="py-24 px-4">
       <div className="mx-auto max-w-3xl">
-        <div className="text-center mb-12">
-          <p className="font-sans text-xs text-accent-light uppercase tracking-[0.25em] mb-4">
+        <FadeUp className="text-center mb-12">
+          <p className="font-sans text-xs text-accent-light uppercase tracking-[0.3em] mb-4">
             Preguntas frecuentes
           </p>
-          <h2 className="font-display text-4xl sm:text-5xl font-light text-cream">
+          <h2 className="font-display text-5xl font-light text-cream">
             Todo lo que{" "}
-            <span className="italic text-accent-light">necesitas saber</span>
+            <em className="not-italic italic text-accent-light">necesitas saber</em>
           </h2>
-        </div>
+        </FadeUp>
 
         <div className="space-y-3">
           {faqs.map((faq, index) => (
-            <FAQItem
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-              isOpen={openIndex === index}
-              onToggle={() => setOpenIndex(openIndex === index ? null : index)}
-            />
+            <FadeUp key={index} delay={index * 50}>
+              <FAQItem
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openIndex === index}
+                onToggle={() => setOpenIndex(openIndex === index ? null : index)}
+              />
+            </FadeUp>
           ))}
         </div>
       </div>
