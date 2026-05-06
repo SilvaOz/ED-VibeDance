@@ -59,15 +59,15 @@ export function Navbar() {
 
         {/* CTA + hamburger */}
         <div className="flex items-center gap-3">
-          <Button href="/eventos" size="sm" className="hidden md:inline-flex">
-            Reservar entrada
+          <Button href="/veranstaltungen" size="sm" className="hidden md:inline-flex">
+            Ticket sichern
           </Button>
 
           {/* Hamburger */}
           <button
             onClick={() => setMenuOpen((v) => !v)}
             className="md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-white/5 transition-colors"
-            aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-label={menuOpen ? "Menü schließen" : "Menü öffnen"}
           >
             <span
               className={[
@@ -114,8 +114,8 @@ export function Navbar() {
             </Link>
           ))}
           <div className="pt-3 border-t border-white/10">
-            <Button href="/eventos" className="w-full justify-center">
-              Reservar entrada
+            <Button href="/veranstaltungen" className="w-full justify-center">
+              Ticket sichern
             </Button>
           </div>
         </div>
