@@ -1,5 +1,21 @@
 import type { Artist, Event, Product } from "@/types";
 
+// ─── Venue ────────────────────────────────────────────────────────────────────
+
+export const venue = {
+  name: "ZiMMT Leipzig",
+  fullName: "ZiMMT — Zentrum für immersive Medienkunst, Musik und Technologie",
+  address: "Torgauer Straße 80, 04318 Leipzig",
+  neighborhood: "Leipzig-Reudnitz",
+  url: "https://zimmt.net",
+  mapsUrl: "https://maps.google.com/?q=Torgauer+Straße+80,+04318+Leipzig",
+  description: "Immersives Kunstzentrum · 3D-Audiosystem mit 36 Lautsprechern",
+  longDescription:
+    "ZiMMT ist eine frühere Wälzlagerfabrik in Leipzig-Reudnitz, die zu einem Zentrum für immersive Medienkunst, Musik und Technologie umgewandelt wurde. Über 50 Kreative arbeiten auf 3.000 m². Das 3D-Audiosystem mit 36 Lautsprechern gehört zu den wenigen seiner Art in ganz Deutschland.",
+  badge: "3D-Sound · 36 Lautsprecher",
+  accessible: true,
+} as const;
+
 // ─── Site info ───────────────────────────────────────────────────────────────
 
 export const siteConfig = {
@@ -73,8 +89,8 @@ export const events: Event[] = [
     subtitle: "Didgeridoo Live + La Lvcha",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
-    venue: "Studio Bewegungsraum",
-    address: "Karl-Liebknecht-Str. 42, 04107 Leipzig",
+    venue: "ZiMMT Leipzig",
+    address: "Torgauer Straße 80, 04318 Leipzig",
     image:
       "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80&fit=crop",
     price: {
@@ -103,8 +119,8 @@ export const events: Event[] = [
     subtitle: "Vollmond Edition",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
-    venue: "Studio Bewegungsraum",
-    address: "Karl-Liebknecht-Str. 42, 04107 Leipzig",
+    venue: "ZiMMT Leipzig",
+    address: "Torgauer Straße 80, 04318 Leipzig",
     image:
       "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&auto=format&q=80&fit=crop",
     price: {
@@ -133,8 +149,8 @@ export const events: Event[] = [
     subtitle: "Wurzeln des Klangs",
     dj: "La Lvcha",
     liveAct: "Oscar Silva (Didgeridoo)",
-    venue: "Studio Bewegungsraum",
-    address: "Karl-Liebknecht-Str. 42, 04107 Leipzig",
+    venue: "ZiMMT Leipzig",
+    address: "Torgauer Straße 80, 04318 Leipzig",
     image:
       "https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=800&auto=format&q=80&fit=crop",
     price: {

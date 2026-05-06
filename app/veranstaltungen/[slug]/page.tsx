@@ -6,6 +6,7 @@ import { events, eventSchedule, siteConfig } from "@/lib/config";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { FadeUp } from "@/components/ui/FadeUp";
+import { VenueCard } from "@/components/ui/VenueCard";
 
 export async function generateStaticParams() {
   return events.map((e) => ({ slug: e.slug }));
@@ -139,6 +140,10 @@ export default async function EventDetailPage({
                 </div>
               </div>
             </FadeUp>
+
+            <FadeUp delay={300}>
+              <VenueCard />
+            </FadeUp>
           </div>
 
           {/* Sidebar — tickets */}
@@ -219,6 +224,14 @@ export default async function EventDetailPage({
                   </p>
                   <p className="font-sans text-sm text-cream">{event.venue}</p>
                   <p className="font-sans text-xs text-muted">{event.address}</p>
+                  <a
+                    href="https://maps.google.com/?q=Torgauer+Stra%C3%9Fe+80,+04318+Leipzig"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans text-xs text-accent-light hover:underline underline-offset-2 mt-1 block"
+                  >
+                    Anfahrt →
+                  </a>
                 </div>
               </div>
             </div>

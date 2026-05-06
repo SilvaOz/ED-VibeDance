@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Events",
   description:
     "Alle Ecstatic-Dance-Veranstaltungen in Leipzig. Jeden Dienstag: Didgeridoo Live + DJ, barfuß, ohne Alkohol — in vollständiger Präsenz.",
+  keywords: [
+    "ecstatic dance Leipzig Events",
+    "ZiMMT Leipzig events",
+    "Torgauer Straße Leipzig",
+    "ecstatic dance ZiMMT",
+    "conscious dance Leipzig-Reudnitz",
+  ],
 };
 
 export default function VeranstaltungenPage() {

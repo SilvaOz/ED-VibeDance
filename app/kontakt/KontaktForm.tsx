@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { siteConfig } from "@/lib/config";
+import { siteConfig, venue } from "@/lib/config";
 import { FadeUp } from "@/components/ui/FadeUp";
 
 export function KontaktForm() {
@@ -144,15 +144,43 @@ export function KontaktForm() {
                 <p className="font-sans text-xs text-accent-light uppercase tracking-widest mb-3">
                   Veranstaltungsort
                 </p>
-                <p className="font-sans text-sm text-cream">
-                  Studio Bewegungsraum
-                </p>
+                <p className="font-sans text-sm text-cream">{venue.name}</p>
                 <p className="font-sans text-xs text-muted mt-1">
-                  Karl-Liebknecht-Str. 42, 04107 Leipzig
+                  {venue.address}
                 </p>
+                <a
+                  href={venue.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-xs text-accent-light hover:underline underline-offset-2 mt-2 block"
+                >
+                  Anfahrt →
+                </a>
               </div>
             </div>
           </FadeUp>
+        </div>
+
+        {/* Karte */}
+        <div className="mt-12">
+          <p className="font-sans text-xs text-muted uppercase tracking-widest mb-3">
+            Lage — {venue.name}
+          </p>
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=12.393,51.338,12.413,51.348&marker=51.3432,12.4034&layers=M"
+            width="100%"
+            height="300"
+            title="ZiMMT Leipzig auf OpenStreetMap"
+            style={{
+              borderRadius: "12px",
+              border: "1px solid rgba(107,79,160,0.2)",
+              display: "block",
+            }}
+            loading="lazy"
+          />
+          <p className="font-sans text-xs text-muted/50 mt-2 text-right">
+            © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="hover:text-muted transition-colors">OpenStreetMap</a>-Mitwirkende
+          </p>
         </div>
       </div>
     </div>

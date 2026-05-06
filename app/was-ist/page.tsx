@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { rules, eventSchedule } from "@/lib/config";
+import { rules, eventSchedule, venue } from "@/lib/config";
 import { Button } from "@/components/ui/Button";
 import { FadeUp } from "@/components/ui/FadeUp";
 
@@ -112,6 +112,51 @@ export default function WasIstPage() {
                 <span className="font-sans text-sm text-muted">{item.label}</span>
               </div>
             ))}
+          </div>
+        </FadeUp>
+      </div>
+
+      {/* Unser Raum */}
+      <div className="mx-auto max-w-3xl mb-20">
+        <FadeUp className="text-center mb-10">
+          <h2 className="font-display text-4xl font-light text-cream">
+            Unser Raum
+          </h2>
+        </FadeUp>
+        <FadeUp delay={100}>
+          <div className="rounded-2xl border border-accent/20 bg-white/5 p-8">
+            <p className="font-sans text-xs text-accent-light uppercase tracking-[0.25em] mb-4">
+              {venue.name} · {venue.neighborhood}
+            </p>
+            <p className="font-sans text-sm text-muted leading-relaxed mb-4">
+              Ecstatic Dance Leipzig tanzt im ZiMMT — einem der ungewöhnlichsten
+              Orte der Stadt. Eine ehemalige Wälzlagerfabrik, verwandelt in ein
+              Zentrum für immersive Medienkunst mit einem 3D-Audiosystem aus 36
+              Lautsprechern — eines der wenigen seiner Art in ganz Deutschland.
+            </p>
+            <p className="font-sans text-sm text-muted leading-relaxed mb-6">
+              Das ist keine Diskothek. Kein Bar. Es ist ein Raum, der dafür
+              geschaffen wurde, dass Klang und Körper sich wirklich begegnen.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={venue.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-sans text-sm text-accent-light hover:text-cream transition-colors"
+              >
+                📍 {venue.address}
+              </a>
+              <span className="text-white/20">·</span>
+              <a
+                href={venue.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-sans text-sm text-muted hover:text-cream transition-colors"
+              >
+                zimmt.net ↗
+              </a>
+            </div>
           </div>
         </FadeUp>
       </div>
