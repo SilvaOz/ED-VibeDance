@@ -77,7 +77,7 @@ export function EventCard({ event }: EventCardProps) {
 
         <div className="flex flex-wrap gap-2 mb-3">
           {event.liveAct && <Badge variant="gold">{event.liveAct}</Badge>}
-          <Badge variant="muted">{event.dj}</Badge>
+          <Badge variant="accent">{event.dj}</Badge>
         </div>
 
         {/* Venue line */}

@@ -5,7 +5,7 @@ import { Logo } from "@/components/ui/Logo";
 const legalLinks = [
   { label: "Impressum", href: "/impressum" },
   { label: "Datenschutz", href: "/datenschutz" },
-  { label: "Contacto", href: "/contacto" },
+  { label: "Kontakt", href: "/kontakt" },
 ];
 
 export function Footer() {
@@ -29,7 +29,7 @@ export function Footer() {
           {/* Col 2 — Navigation */}
           <div>
             <h4 className="font-sans text-xs font-medium text-muted uppercase tracking-widest mb-4">
-              Navegación
+              Navigation
             </h4>
             <ul className="space-y-2">
               {navLinks.map((link) => (
@@ -48,7 +48,7 @@ export function Footer() {
           {/* Col 3 — Contact + socials */}
           <div>
             <h4 className="font-sans text-xs font-medium text-muted uppercase tracking-widest mb-4">
-              Contacto
+              Kontakt
             </h4>
             <div className="space-y-3 mb-6">
               <a
@@ -60,7 +60,7 @@ export function Footer() {
             </div>
 
             <h4 className="font-sans text-xs font-medium text-muted uppercase tracking-widest mb-3">
-              Comunidad
+              Community
             </h4>
             <div className="flex gap-3">
               <a
@@ -86,7 +86,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-sans text-xs text-muted/60">
-            &copy; {new Date().getFullYear()} {siteConfig.fullName}. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} {siteConfig.fullName}. Alle Rechte vorbehalten.
           </p>
           <div className="flex gap-4">
             {legalLinks.map((link) => (

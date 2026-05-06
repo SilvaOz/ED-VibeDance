@@ -2,6 +2,7 @@ import Image from "next/image";
 import { rules } from "@/lib/config";
 import { Button } from "@/components/ui/Button";
 import { FadeUp } from "@/components/ui/FadeUp";
+import { RuleIcon } from "@/components/ui/RuleIcon";
 
 const SECTION_IMAGE =
   "https://images.unsplash.com/photo-1545389336-cf090694435e?w=900&auto=format&q=80&fit=crop";
@@ -32,11 +33,13 @@ export function WhatIsSection() {
             {rules.map((rule, index) => (
               <FadeUp key={index} delay={index * 60}>
                 <div className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 h-full transition-all duration-300 hover:border-accent/30 hover:bg-accent/5">
-                  <div className="text-2xl mb-3">{rule.icon}</div>
+                  <div className="mb-3 text-accent-light">
+                    <RuleIcon name={rule.icon} size={24} />
+                  </div>
                   <h3 className="font-display text-lg font-semibold text-cream mb-1.5 group-hover:text-accent-light transition-colors">
                     {rule.title}
                   </h3>
-                  <p className="font-sans text-sm text-muted leading-relaxed">
+                  <p className="font-sans text-base text-muted leading-relaxed">
                     {rule.description}
                   </p>
                 </div>

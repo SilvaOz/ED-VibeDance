@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/home/HeroSection";
 import { WhatIsSection } from "@/components/home/WhatIsSection";
+import { DieReiseSection } from "@/components/home/DieReiseSection";
 import { NextEventsSection } from "@/components/home/NextEventsSection";
 import { ZehnerkartePromo } from "@/components/home/ZehnerkartePromo";
 import { FAQSection } from "@/components/home/FAQSection";
@@ -17,6 +18,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <WhatIsSection />
+      <DieReiseSection />
       <NextEventsSection />
       <ZehnerkartePromo />
       <FAQSection />

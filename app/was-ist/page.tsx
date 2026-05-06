@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { rules, eventSchedule, venue } from "@/lib/config";
 import { Button } from "@/components/ui/Button";
 import { FadeUp } from "@/components/ui/FadeUp";
+import { RuleIcon } from "@/components/ui/RuleIcon";
+import { MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Was ist Ecstatic Dance?",
@@ -81,11 +83,13 @@ export default function WasIstPage() {
           {rules.map((rule, i) => (
             <FadeUp key={i} delay={i * 60}>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/30 hover:bg-accent/5 transition-all duration-300 h-full">
-                <div className="text-3xl mb-3">{rule.icon}</div>
+                <div className="mb-3 text-accent-light">
+                  <RuleIcon name={rule.icon} size={26} />
+                </div>
                 <h3 className="font-display text-xl font-semibold text-cream mb-2">
                   {rule.title}
                 </h3>
-                <p className="font-sans text-sm text-muted">{rule.description}</p>
+                <p className="font-sans text-base text-muted">{rule.description}</p>
               </div>
             </FadeUp>
           ))}
@@ -145,7 +149,8 @@ export default function WasIstPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-sans text-sm text-accent-light hover:text-cream transition-colors"
               >
-                📍 {venue.address}
+                <MapPin size={14} strokeWidth={1.5} />
+                {venue.address}
               </a>
               <span className="text-white/20">·</span>
               <a

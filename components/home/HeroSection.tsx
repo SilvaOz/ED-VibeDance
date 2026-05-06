@@ -2,8 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { events, siteConfig } from "@/lib/config";
 
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1920&auto=format&q=85&fit=crop";
+const HERO_IMAGE = "/hero-dancing.jpeg";
 
 function formatNextEvent() {
   const upcoming = events.find((e) => new Date(e.date) > new Date());

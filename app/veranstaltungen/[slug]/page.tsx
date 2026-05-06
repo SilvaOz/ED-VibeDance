@@ -131,8 +131,8 @@ export default async function EventDetailPage({
                       {event.liveAct}
                     </p>
                   </div>
-                  <div className="p-4 rounded-xl border border-white/8 bg-white/3">
-                    <p className="font-sans text-xs text-accent-light uppercase tracking-widest mb-1">
+                  <div className="p-4 rounded-xl border border-gold/20 bg-gold/5">
+                    <p className="font-sans text-xs text-gold uppercase tracking-widest mb-1">
                       DJ
                     </p>
                     <p className="font-display text-lg text-cream">{event.dj}</p>
