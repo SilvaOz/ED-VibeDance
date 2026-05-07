@@ -59,9 +59,11 @@ export function Navbar() {
 
         {/* CTA + hamburger */}
         <div className="flex items-center gap-3">
-          <Button href="/veranstaltungen" size="sm" className="hidden md:inline-flex">
-            Ticket sichern
-          </Button>
+          <div className="hidden md:block">
+            <Button href="/veranstaltungen" size="sm">
+              Ticket sichern
+            </Button>
+          </div>
 
           {/* Hamburger */}
           <button

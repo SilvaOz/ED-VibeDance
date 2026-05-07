@@ -32,7 +32,7 @@ export default function VeranstaltungenPage() {
             <em className="not-italic italic text-accent-light">Events</em>
           </h1>
           <p className="font-sans text-base text-muted max-w-xl mx-auto leading-relaxed">
-            Jeden Dienstag, 19:30 Uhr. Studio Bewegungsraum, Leipzig.
+            Jeden Dienstag, 19:00 Uhr. ZiMMT Leipzig.
           </p>
         </FadeUp>
 

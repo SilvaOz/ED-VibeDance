@@ -42,7 +42,7 @@ export function HeroSection() {
         <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full bg-gold/10 blur-[80px] opacity-60" />
       </div>
 
-      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 pt-20 sm:pt-0">
         <p className="animate-fade-up font-sans text-xs text-gold uppercase tracking-[0.4em] mb-8">
           {siteConfig.fullName}
         </p>

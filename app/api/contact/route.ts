@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
             </p>
             <hr style="border-color: rgba(255,255,255,0.1); margin: 24px 0;" />
             <p style="color: #7A7A9A; font-size: 12px;">
-              Ecstatic Dance Leipzig · Jeden Dienstag, 19:30 Uhr · ZiMMT Leipzig
+              Ecstatic Dance Leipzig · Jeden Dienstag, 19:00 Uhr · ZiMMT Leipzig
             </p>
           </div>
         `,

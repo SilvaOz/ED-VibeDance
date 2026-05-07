@@ -27,7 +27,7 @@ export const siteConfig = {
     "Die authentischste Ecstatic-Dance-Erfahrung in Leipzig. Didgeridoo live + DJ, kein Alkohol, keine Drogen, barfuß — nur Musik, Bewegung und echte Verbindung.",
   instagram: "https://instagram.com/staticdanceleipzig",
   telegram: "https://t.me/ecstaticdanceleipzig",
-  email: "hola@ecstaticdanceleipzig.de",
+  email: "hallo@ecstaticdanceleipzig.de",
   eventDay: "Jeden Dienstag, 19:00 – 22:00 Uhr, Leipzig",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de",
 } as const;
@@ -83,7 +83,7 @@ export const events: Event[] = [
   {
     id: "evt-001",
     slug: "ecstatic-dance-leipzig-12-mai-2026",
-    date: "2026-05-12T18:00:00",
+    date: "2026-05-12T19:00:00",
     title: "Ecstatic Dance Leipzig",
     subtitle: "Sound & Dance Ritual mit La Lvcha",
     dj: "La Lvcha",
@@ -110,7 +110,7 @@ export const events: Event[] = [
   {
     id: "evt-002",
     slug: "ecstatic-dance-leipzig-19-mai-2026",
-    date: "2026-05-19T18:00:00",
+    date: "2026-05-19T19:00:00",
     title: "Ecstatic Dance Leipzig",
     subtitle: "Sound & Dance Ritual mit La Lvcha",
     dj: "La Lvcha",
@@ -137,7 +137,7 @@ export const events: Event[] = [
   {
     id: "evt-003",
     slug: "ecstatic-dance-leipzig-26-mai-2026",
-    date: "2026-05-26T18:00:00",
+    date: "2026-05-26T19:00:00",
     title: "Ecstatic Dance Leipzig",
     subtitle: "Sound & Dance Ritual mit La Lvcha",
     dj: "La Lvcha",
@@ -166,9 +166,9 @@ export const artists: Artist[] = [
     name: "Oscar Silva",
     role: "live-musician",
     origin: "Peru / Leipzig",
-    bio: "Didgeridoo-Meister mit Wurzeln im Heiligen Tal Perus. Er öffnet den Raum mit ancestralem Klang, der den Körper zur Bewegung einlädt.",
+    bio: "Didgeridoo-Meister mit Wurzeln im Heiligen Tal Perus. Gründer und Pionier von VibraDance — einer wachsenden Plattform für bewussten Tanz.",
     longBio:
-      "Oscar Silva wurde in den Höhen des Heiligen Tals Perus geboren und lebt heute in Leipzig. Seine Beziehung zum Didgeridoo geht weit über das Instrument hinaus: Es ist eine Praxis der Präsenz, der Kreisatmung und der Verbindung mit der Erde. Gemeinsam mit La Lvcha gestaltet er am Ende jedes Abends eine Sound Journey mit Handpan, Klangschalen, Flöten, Didgeridoo und weiteren Instrumenten — manchmal auch am Anfang. Kein Abend ist wie der andere.",
+      "Oscar Silva wurde in den Höhen des Heiligen Tals Perus geboren und lebt heute in Leipzig. Seine Beziehung zum Didgeridoo geht weit über das Instrument hinaus: Es ist eine Praxis der Präsenz, der Kreisatmung und der Verbindung mit der Erde. Als Gründer und Pionier von VibraDance baut er eine lebendige Plattform auf — eine Bewegung, die weit über einzelne Abende hinausgeht und mit anderen Künstlern, DJs und Festivals unter der gemeinsamen Vision von VibraDance wächst. Gemeinsam mit La Lvcha gestaltet er am Ende jedes Abends eine Sound Journey mit Handpan, Klangschalen, Flöten, Didgeridoo und weiteren Instrumenten. Kein Abend ist wie der andere.",
     instagram: "https://instagram.com/oscarsilva",
     image:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&auto=format&q=80&fit=crop",
