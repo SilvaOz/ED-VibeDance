@@ -54,17 +54,7 @@ export function ComingSoon() {
           </div>
         )}
 
-        <div className="flex items-center justify-center gap-6">
-          <a href={siteConfig.instagram} target="_blank" rel="noopener noreferrer"
-            className="font-sans text-sm text-muted hover:text-cream transition-colors">
-            Instagram
-          </a>
-          <span className="text-white/10">·</span>
-          <a href={siteConfig.telegram} target="_blank" rel="noopener noreferrer"
-            className="font-sans text-sm text-muted hover:text-cream transition-colors">
-            Telegram
-          </a>
-          <span className="text-white/10">·</span>
+        <div className="flex items-center justify-center">
           <a href={`mailto:${siteConfig.email}`}
             className="font-sans text-sm text-muted hover:text-cream transition-colors">
             {siteConfig.email}
