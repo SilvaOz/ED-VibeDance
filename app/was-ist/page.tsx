@@ -120,6 +120,53 @@ export default function WasIstPage() {
         </FadeUp>
       </div>
 
+      {/* Was dich erwartet */}
+      <div className="mx-auto max-w-3xl mb-20">
+        <FadeUp className="text-center mb-10">
+          <h2 className="font-display text-4xl font-light text-cream">
+            Was dich erwartet
+          </h2>
+        </FadeUp>
+        <div className="space-y-4">
+          <FadeUp delay={60}>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 className="font-display text-xl font-semibold text-cream mb-3">
+                Der Kreis
+              </h3>
+              <p className="font-sans text-sm text-muted leading-relaxed">
+                Jeder Abend beginnt und endet mit einem gemeinsamen Kreis. Der
+                Eröffnungskreis setzt die Intention — der Abschlusskreis schließt
+                den Raum. Kein Wort zu viel. Nur Präsenz.
+              </p>
+            </div>
+          </FadeUp>
+          <FadeUp delay={120}>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 className="font-display text-xl font-semibold text-cream mb-3">
+                Der Altar
+              </h3>
+              <p className="font-sans text-sm text-muted leading-relaxed">
+                Im Raum gibt es einen Altar — ein stiller Ort zum Sitzen,
+                Innehalten und Kontemplieren. Für alle, die eine Pause vom Tanz
+                brauchen, ohne den Raum zu verlassen.
+              </p>
+            </div>
+          </FadeUp>
+          <FadeUp delay={180}>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 className="font-display text-xl font-semibold text-cream mb-3">
+                Matten & Kissen
+              </h3>
+              <p className="font-sans text-sm text-muted leading-relaxed">
+                An den Seiten des Raums liegen Matten und Kissen. Du kannst dich
+                jederzeit hinlegen, strecken oder einfach beobachten. Alle Körper
+                und alle Arten zu sein sind willkommen.
+              </p>
+            </div>
+          </FadeUp>
+        </div>
+      </div>
+
       {/* Unser Raum */}
       <div className="mx-auto max-w-3xl mb-20">
         <FadeUp className="text-center mb-10">

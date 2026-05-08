@@ -33,6 +33,36 @@ Wenn du ein Didgeridoo live hörst, kommt der Klang nicht nur bei deinen Ohren a
 
 Im Kontext des Ecstatic Dance dient das Didgeridoo von Oscar Silva als Eingangsportal. Bevor die Musik des DJs beginnt, bereitet der Klang des Didgeridoos Körper und Geist auf bewusste Bewegung vor.`,
   },
+  "didgeridoo-und-ich": {
+    title: "Warum ich 2007 aufgehört habe, Noten zu lernen",
+    date: "2026-05-08",
+    tags: ["musik", "didgeridoo", "geschichte"],
+    content: `Ich habe Didgeridoo nie in einer Schule gelernt.
+
+2007 in Lima — einer Stadt, die niemals schläft, niemals schweigt — hörte ich zum ersten Mal diesen Klang. Nicht auf einer Bühne. Auf der Straße. Ein Rohr aus Holz, das klang wie die Erde selbst atmet.
+
+Ich wusste sofort: Das ist meins. Nicht weil ich es spielen konnte. Sondern weil es mich rief.
+
+Die ersten Jahre spielte ich in Lima mit Manongo Mujica und Corina Bartra — zwei Künstler, die mich gelehrt haben, dass Musik keine Performance ist. Sie ist ein Dienst. Du dienst dem Raum. Du dienst den Menschen. Du dienst dem Moment.
+
+Irgendwann reichte Lima nicht mehr. Zu viel Lärm. Zu wenig Stille. Ich reiste durch Lateinamerika — auf der Suche nach Klängen, die kein Buch kennt.
+
+Und dann die Berge.
+
+Ich zog nach Sacsayhuamán, nahe Cusco, auf 3.500 Meter. Inka-Ruinen. Andenwind. Sonnenuntergänge, die dich stumm machen. Dort lernte ich das Schweigen zwischen den Tönen kennen.
+
+2017 begegnete ich Ash Dargan beim Qente Festival in Cusco. Qente — das ist Quechua für Kolibri. Klein, schnell, präzise. Ein Tier, das weiß, wo es hingehört.
+
+Ash sagte mir etwas, das ich nie vergessen werde: "Spiel nicht das Instrument. Lass das Instrument dich spielen."
+
+Seitdem ist meine Praxis anders. Ich lerne nicht mehr Techniken. Ich höre zu.
+
+Heute lebe ich in Leipzig. Jeden Dienstag öffne ich den Raum im ZiMMT mit meinem Didgeridoo — und manchmal frage ich mich, wie ein Rohr aus Holz Menschen zum Weinen, zum Lachen, zum Tanzen bringen kann.
+
+Ich habe keine Antwort. Aber ich spiele weiter.
+
+Oscar Silva · Leipzig, Mai 2026`,
+  },
   "zehnerkarte-lohnt-sich": {
     title: "Lohnt sich die Zehnerkarte?",
     date: "2026-04-29",

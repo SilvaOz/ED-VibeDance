@@ -60,10 +60,17 @@ export function HeroSection() {
         </h1>
 
         <p
-          className="animate-fade-up font-sans text-base sm:text-lg text-cream/60 tracking-wider mb-10"
+          className="animate-fade-up font-sans text-base sm:text-lg text-cream/60 tracking-wider mb-4"
           style={{ animationDelay: "200ms" }}
         >
           Conscious Dance &nbsp;·&nbsp; Didgeridoo Live &nbsp;·&nbsp; Sacred Sound
+        </p>
+
+        <p
+          className="animate-fade-up font-sans text-[10px] text-cream/50 uppercase tracking-[0.3em] mb-10"
+          style={{ animationDelay: "250ms" }}
+        >
+          Das einzige Ecstatic Dance in Leipzig mit Didgeridoo Live — seit 2007 im Dienst des Klangs.
         </p>
 
         <div

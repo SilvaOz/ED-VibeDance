@@ -70,11 +70,12 @@ export const rules = [
 // ─── Veranstaltungsformat ─────────────────────────────────────────────────────
 
 export const eventSchedule = [
-  { time: "19:00", label: "Einlass — Türen öffnen" },
-  { time: "19:30", label: "Türen schließen — der Raum beginnt" },
-  { time: "19:30 – 21:30", label: "Ecstatic Dance mit DJ La Lvcha (manchmal eröffnet Didgeridoo den Raum)" },
-  { time: "~21:30", label: "Sound Journey: Handpan, Klangschalen, Flöten, Didgeridoo & mehr — je nach Abend variabel" },
-  { time: "22:00", label: "Ende" },
+  { time: "19:00", label: "Einlass & Ankommen. Schuhe aus, Handy weg." },
+  { time: "19:30", label: "Eröffnungskreis. Oscar Silva öffnet den Raum mit Didgeridoo live." },
+  { time: "19:45–21:30", label: "Ecstatic Dance Journey mit DJ La Lvcha." },
+  { time: "21:30", label: "Sound Journey & Heilung. Didgeridoo, Handpan, Djembe, Maultrommel, Querflöte." },
+  { time: "21:55", label: "Schlusskreis. Gemeinsames Innehalten." },
+  { time: "22:00", label: "Ende." },
 ] as const;
 
 // ─── Veranstaltungen ──────────────────────────────────────────────────────────
@@ -168,16 +169,16 @@ export const artists: Artist[] = [
     origin: "Peru / Leipzig",
     bio: "Didgeridoo-Meister mit Wurzeln im Heiligen Tal Perus. Gründer und Pionier von VibraDance — einer wachsenden Plattform für bewussten Tanz.",
     longBio:
-      "Oscar Silva wurde in den Höhen des Heiligen Tals Perus geboren und lebt heute in Leipzig. Seine Beziehung zum Didgeridoo geht weit über das Instrument hinaus: Es ist eine Praxis der Präsenz, der Kreisatmung und der Verbindung mit der Erde. Als Gründer und Pionier von VibraDance baut er eine lebendige Plattform auf — eine Bewegung, die weit über einzelne Abende hinausgeht und mit anderen Künstlern, DJs und Festivals unter der gemeinsamen Vision von VibraDance wächst. Gemeinsam mit La Lvcha gestaltet er am Ende jedes Abends eine Sound Journey mit Handpan, Klangschalen, Flöten, Didgeridoo und weiteren Instrumenten. Kein Abend ist wie der andere.",
-    instagram: "https://instagram.com/oscarsilva",
+      "Oscar Silva wurde in Lima geboren — einer Stadt voller Lärm, Bewegung und urbaner Kunst. Doch irgendwann reichte das nicht mehr. Er suchte Stille. Er fand das Didgeridoo.\n\nSeit 2007 spielt er — und je tiefer er in das Instrument eintauchte, desto klarer wurde der Ruf der Natur. Bevor er sich in den Bergen niederließ, reiste er durch Lateinamerika — auf der Suche nach Klängen, die keine Partitur kennen. Indigene Rhythmen, Zeremonialmusik, Straßenklang. Alles wurde Teil seiner Sprache.\n\nIn Lima hatte er bereits an der Seite von Manongo Mujica und Corina Bartra gespielt — zwei der bedeutendsten Klangkünstler Perus. Dann der Ruf der Berge. Er verließ die Stadt und zog in die Höhen von Sacsayhuamán, nahe Cusco, auf 3.500 Meter Höhe. Dort, zwischen Inka-Ruinen und Andenwind, vertiefte er seine Praxis: Kreisatmung als Meditation, Klang als Sprache, Stille als Lehrer.\n\nIn Cusco folgte die Bühne im Teatro del Cusco, gemeinsame Auftritte mit Tania Castro und Lucho Castro, Teilnahme an tibetischen Friedensevents für den Weltfrieden und rituellen Klangzeremonien.\n\n2017 begegnete ihm der australische Didgeridoo-Meister Ash Dargan beim Qente Festival in Cusco — Qente bedeutet auf Quechua \"Kolibri\", Symbol der Freude und des gegenwärtigen Moments. Unter Ash Dargans Anleitung lernte Oscar das Wichtigste: nicht Noten spielen, sondern Geschichten erzählen. Mit Atem. Mit Kreisatmung. Mit Schweigen.\n\nDann Europa. In Frankreich nahm er am legendären Didg to Didg Festival teil — einem der wichtigsten internationalen Didgeridoo-Treffen weltweit. Seitdem expandiert er durch den Kontinent und baut mit VibraDance Leipzig eine lebendige Plattform für bewussten Tanz im DACH-Raum auf.\n\nJeden Dienstag öffnet er den Raum — mit Didgeridoo, Handpan, Djembe, Maultrommel und Querflöte. Kein Abend ist wie der andere.",
+    instagram: "https://instagram.com/oscarsilva.music",
     image:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&auto=format&q=80&fit=crop",
     genres: [
       "Didgeridoo",
-      "Sound Healing",
-      "Ritualmusik",
-      "Schamanisch",
-      "Ambient",
+      "Handpan",
+      "Djembe",
+      "Maultrommel",
+      "Querflöte",
     ],
   },
   {

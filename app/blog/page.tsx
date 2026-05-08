@@ -10,6 +10,14 @@ export const metadata: Metadata = {
 
 const placeholderPosts = [
   {
+    slug: "didgeridoo-und-ich",
+    title: "Warum ich 2007 aufgehört habe, Noten zu lernen",
+    excerpt:
+      "Ich spiele Didgeridoo seit 2007. Nicht weil ich Musik studiert habe — sondern weil ein Instrument mich gerufen hat.",
+    date: "2026-05-08",
+    tag: "Musik",
+  },
+  {
     slug: "was-ist-ecstatic-dance",
     title: "Was ist Ecstatic Dance?",
     excerpt:

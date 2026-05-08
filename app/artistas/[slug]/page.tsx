@@ -104,9 +104,13 @@ export default async function ArtistaPage({ params }: PageProps) {
 
           {/* Bio */}
           <div className="md:col-span-2">
-            <p className="font-sans text-sm text-muted leading-relaxed mb-6">
-              {artist.longBio ?? artist.bio}
-            </p>
+            <div className="space-y-4 mb-6">
+              {(artist.longBio ?? artist.bio).split("\n\n").map((para, i) => (
+                <p key={i} className="font-sans text-sm text-muted leading-relaxed">
+                  {para}
+                </p>
+              ))}
+            </div>
 
             <div className="mb-8">
               <h2 className="font-display text-2xl font-light text-cream mb-4">
