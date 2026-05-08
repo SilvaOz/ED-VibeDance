@@ -65,3 +65,25 @@ export interface BlogPost {
   tags: string[];
   image?: string;
 }
+
+export type TicketType = "event" | "zehnerkarte";
+export type TicketStatus = "active" | "used" | "expired";
+
+export interface Ticket {
+  id: string;
+  type: TicketType;
+  name: string;
+  email: string;
+  createdAt: string;
+  status: TicketStatus;
+  qrDataUrl: string;
+  // Event ticket fields
+  eventId?: string;
+  eventTitle?: string;
+  eventDate?: string;
+  usedAt?: string;
+  // Zehnerkarte fields
+  totalPunches?: number;
+  usedPunches?: number;
+  validUntil?: string;
+}
