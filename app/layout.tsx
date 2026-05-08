@@ -82,6 +82,8 @@ export const metadata: Metadata = {
   },
 };
 
+const COMING_SOON = process.env.COMING_SOON === "true";
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -91,9 +93,9 @@ export default function RootLayout({
       className={`${cormorant.variable} ${inter.variable}`}
     >
       <body className="min-h-screen flex flex-col antialiased">
-        <Navbar />
+        {!COMING_SOON && <Navbar />}
         <main className="flex-1">{children}</main>
-        <Footer />
+        {!COMING_SOON && <Footer />}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
