@@ -21,24 +21,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: `${siteConfig.fullName} — ${siteConfig.tagline}`,
-    template: `%s — ${siteConfig.fullName}`,
-  },
-  description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
-  openGraph: {
-    type: "website",
-    locale: "de_DE",
-    siteName: siteConfig.fullName,
-    title: `${siteConfig.fullName} — ${siteConfig.tagline}`,
-    description: siteConfig.description,
+  title: {
+    default: "Ecstatic Dance Leipzig — Conscious Dance · Didgeridoo Live",
+    template: "%s | Ecstatic Dance Leipzig",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.fullName,
-    description: siteConfig.description,
-  },
+  description:
+    "Ecstatic Dance jeden Dienstag in Leipzig. Didgeridoo live, kein Alkohol, barfuß — bewusste Bewegung im ZiMMT Leipzig-Reudnitz.",
   keywords: [
     "ecstatic dance Leipzig",
     "conscious dance Leipzig",
@@ -46,9 +35,51 @@ export const metadata: Metadata = {
     "sound healing Leipzig",
     "didgeridoo live Leipzig",
     "barfuß tanzen Leipzig",
-    "bewusstes feiern Leipzig",
+    "bewusstes tanzen Leipzig",
     "ecstatic dance Deutschland",
+    "VibraDance Leipzig",
+    "ZiMMT Leipzig",
   ],
+  authors: [{ name: "Oscar Silva", url: "https://instagram.com/oscarsilva.music" }],
+  creator: "Oscar Silva — VibraDance",
+  openGraph: {
+    type: "website",
+    locale: "de_DE",
+    url: siteConfig.url,
+    siteName: "Ecstatic Dance Leipzig",
+    title: "Ecstatic Dance Leipzig — Conscious Dance · Didgeridoo Live",
+    description:
+      "Ecstatic Dance jeden Dienstag in Leipzig. Didgeridoo live, kein Alkohol, barfuß — bewusste Bewegung im ZiMMT.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ecstatic Dance Leipzig — VibraDance",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ecstatic Dance Leipzig",
+    description:
+      "Conscious Dance · Didgeridoo Live · Sacred Sound. Jeden Dienstag in Leipzig.",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: siteConfig.url,
+  },
 };
 
 export default function RootLayout({
@@ -63,6 +94,48 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "EventSeries",
+              name: "Ecstatic Dance Leipzig",
+              description:
+                "Wöchentlicher Ecstatic Dance mit Didgeridoo live und DJ La Lvcha im ZiMMT Leipzig.",
+              url: siteConfig.url,
+              organizer: {
+                "@type": "Person",
+                name: "Oscar Silva",
+                url: `${siteConfig.url}/artistas/oscar-silva`,
+              },
+              location: {
+                "@type": "Place",
+                name: "ZiMMT Leipzig",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Torgauer Straße 80",
+                  addressLocality: "Leipzig",
+                  postalCode: "04318",
+                  addressCountry: "DE",
+                },
+              },
+              eventSchedule: {
+                "@type": "Schedule",
+                repeatFrequency: "P1W",
+                byDay: "Tuesday",
+                startTime: "19:00",
+                endTime: "22:00",
+              },
+              offers: {
+                "@type": "Offer",
+                price: "18",
+                priceCurrency: "EUR",
+                availability: "https://schema.org/InStock",
+              },
+            }),
+          }}
+        />
       </body>
     </html>
   );

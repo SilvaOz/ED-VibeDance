@@ -4,9 +4,9 @@ import { EventCard } from "@/components/ui/EventCard";
 import { FadeUp } from "@/components/ui/FadeUp";
 
 export const metadata: Metadata = {
-  title: "Events",
+  title: "Events — Nächste Ecstatic Dance Abende in Leipzig",
   description:
-    "Alle Ecstatic-Dance-Veranstaltungen in Leipzig. Jeden Dienstag: Didgeridoo Live + DJ, barfuß, ohne Alkohol — in vollständiger Präsenz.",
+    "Alle kommenden Ecstatic Dance Abende in Leipzig. Jeden Dienstag im ZiMMT, Torgauer Str. 80, Leipzig-Reudnitz. Tickets ab 18€.",
   keywords: [
     "ecstatic dance Leipzig Events",
     "ZiMMT Leipzig events",
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "ecstatic dance ZiMMT",
     "conscious dance Leipzig-Reudnitz",
   ],
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de"}/veranstaltungen` },
 };
 
 export default function VeranstaltungenPage() {

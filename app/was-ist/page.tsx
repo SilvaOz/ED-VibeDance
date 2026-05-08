@@ -8,7 +8,8 @@ import { MapPin } from "lucide-react";
 export const metadata: Metadata = {
   title: "Was ist Ecstatic Dance?",
   description:
-    "Erfahre, was Ecstatic Dance ist: freie Bewegung, bewusstes Tanzen ohne Alkohol, ohne Choreografie. Nur Musik, Bewegung und vollständige Präsenz.",
+    "Ecstatic Dance ist freie Bewegung ohne Choreografie — kein Alkohol, barfuß, keine Regeln außer Respekt. Entdecke, was dich jeden Dienstag in Leipzig erwartet.",
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de"}/was-ist` },
 };
 
 export default function WasIstPage() {

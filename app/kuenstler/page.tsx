@@ -4,9 +4,10 @@ import { ArtistCard } from "@/components/ui/ArtistCard";
 import { FadeUp } from "@/components/ui/FadeUp";
 
 export const metadata: Metadata = {
-  title: "Künstler",
+  title: "Künstler — Oscar Silva & La Lvcha",
   description:
-    "Die Künstler hinter Ecstatic Dance Leipzig: Oscar Silva am Didgeridoo und La Lvcha als Resident-DJ.",
+    "Oscar Silva spielt Didgeridoo seit 2007 — von Lima über Sacsayhuamán bis Leipzig. La Lvcha bringt afrolateinische Rhythmen auf die Tanzfläche.",
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de"}/kuenstler` },
 };
 
 export default function KuenstlerPage() {

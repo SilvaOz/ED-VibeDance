@@ -3,9 +3,10 @@ import Link from "next/link";
 import { FadeUp } from "@/components/ui/FadeUp";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Blog — Ecstatic Dance, Didgeridoo & bewusstes Leben",
   description:
-    "Artikel über Ecstatic Dance, bewusstes Tanzen, Sound Healing und bewusstes Leben in Leipzig.",
+    "Hintergründe, Praxis und Geschichten aus der Welt des bewussten Tanzens. Didgeridoo, Sound Healing und Ecstatic Dance aus Leipzig.",
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de"}/blog` },
 };
 
 const placeholderPosts = [

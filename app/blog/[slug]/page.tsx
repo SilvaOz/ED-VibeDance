@@ -9,11 +9,14 @@ interface PageProps {
 // Static placeholder — wird durch MDX ersetzt, sobald konfiguriert
 const posts: Record<
   string,
-  { title: string; date: string; content: string; tags: string[] }
+  { title: string; date: string; description: string; content: string; tags: string[]; keywords?: string[] }
 > = {
   "was-ist-ecstatic-dance": {
     title: "Was ist Ecstatic Dance? Ein vollständiger Leitfaden",
     date: "2026-04-15",
+    description:
+      "Ecstatic Dance ist keine Tanzstunde — es ist eine Praxis der Freiheit. Was es ist, woher es kommt und warum immer mehr Menschen in Leipzig tanzen.",
+    keywords: ["ecstatic dance Leipzig", "was ist ecstatic dance", "conscious dance", "tanzen ohne alkohol"],
     tags: ["ecstatic dance", "conscious dance", "grundlagen"],
     content: `Ecstatic Dance ist eine Praxis der freien Bewegung, die Anfang der 2000er Jahre auf Hawaii entstand und sich inzwischen in über 50 Ländern verbreitet hat. Die Prämisse ist einfach, aber kraftvoll: Musik + Freiheit + Präsenz = Transformation.
 
@@ -24,8 +27,11 @@ Die drei Schlüssel des Ecstatic Dance sind: sorgfältig ausgewählte Musik, die
 In Leipzig gehen wir mit dem einzigartigen Merkmal des Live-Didgeridoos von Oscar Silva einen Schritt weiter — er eröffnet jede Session mit ancestralem Klang.`,
   },
   "didgeridoo-heilklang": {
-    title: "Das Didgeridoo als Heilklang-Instrument",
+    title: "Didgeridoo: Das älteste Instrument der Welt und seine Heilwirkung",
     date: "2026-04-22",
+    description:
+      "Das Didgeridoo erzeugt Frequenzen, die tief in den Körper eindringen. Was Kreisatmung und Oberton mit Sound Healing zu tun haben.",
+    keywords: ["didgeridoo Leipzig", "didgeridoo sound healing", "kreisatmung", "klangheilung"],
     tags: ["didgeridoo", "sound healing", "musik"],
     content: `Das Didgeridoo ist eines der ältesten Instrumente der Welt — es hat über 40.000 Jahre Geschichte in den Kulturen der australischen Ureinwohner. Doch über seine Geschichte hinaus liegt seine Magie im Klang: tiefe Frequenzen, die direkt mit dem parasympathischen Nervensystem resonieren.
 
@@ -36,6 +42,9 @@ Im Kontext des Ecstatic Dance dient das Didgeridoo von Oscar Silva als Eingangsp
   "didgeridoo-und-ich": {
     title: "Warum ich 2007 aufgehört habe, Noten zu lernen",
     date: "2026-05-08",
+    description:
+      "Ich spiele Didgeridoo seit 2007 — nicht weil ich Musik studiert habe, sondern weil ein Instrument mich gerufen hat. Eine Geschichte aus Lima, Cusco und Leipzig.",
+    keywords: ["didgeridoo lernen Leipzig", "oscar silva didgeridoo", "didgeridoo cusco", "ash dargan"],
     tags: ["musik", "didgeridoo", "geschichte"],
     content: `Ich habe Didgeridoo nie in einer Schule gelernt.
 
@@ -64,8 +73,11 @@ Ich habe keine Antwort. Aber ich spiele weiter.
 Oscar Silva · Leipzig, Mai 2026`,
   },
   "zehnerkarte-lohnt-sich": {
-    title: "Lohnt sich die Zehnerkarte?",
+    title: "Zehnerkarte Ecstatic Dance Leipzig — Lohnt sie sich wirklich?",
     date: "2026-04-29",
+    description:
+      "Ein ehrlicher Vergleich: Abendkasse 18€ vs Zehnerkarte 10€ pro Abend. Wann lohnt sich die Karte — und wann nicht.",
+    keywords: ["zehnerkarte ecstatic dance", "ecstatic dance Leipzig preis", "conscious dance Leipzig"],
     tags: ["zehnerkarte", "preise", "praktisches"],
     content: `Ein ehrlicher Vergleich: An der Abendkasse zahlst du 15 €, im Vorverkauf 12 €, als Early Bird 8 €. Mit der Zehnerkarte kommst du auf 10 € pro Abend — für alle 10 Eintritte.
 
@@ -85,7 +97,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const post = posts[slug];
   if (!post) return {};
-  return { title: post.title };
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecstaticdanceleipzig.de";
+  return {
+    title: post.title,
+    description: post.description,
+    keywords: post.keywords,
+    alternates: { canonical: `${base}/blog/${slug}` },
+  };
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
