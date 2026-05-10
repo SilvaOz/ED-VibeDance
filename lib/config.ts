@@ -83,8 +83,8 @@ export const eventSchedule = [
 export const events: Event[] = [
   {
     id: "evt-001",
-    slug: "ecstatic-dance-leipzig-12-mai-2026",
-    date: "2026-05-12T19:00:00",
+    slug: "ecstatic-dance-leipzig-19-mai-2026",
+    date: "2026-05-19T19:00:00",
     title: "Ecstatic Dance Leipzig",
     subtitle: "Sound & Dance Ritual mit La Lvcha",
     dj: "La Lvcha",
